@@ -13,7 +13,10 @@
 | ComfyUI-Flow | 6 | ✅ | 不需要（纯运算/文本） | 0 |
 | ComfyUI-Vision | 7 | ✅ | Florence-2 ✅ | 3（WD14 / BLIP / VLM） |
 | ComfyUI-Segment | 6 | ✅ | SAM2 ✅ / FaceCrop ✅ | 2（GroundingDINO / Matting） |
-| **合计** | **33** | **✅** | **3 模式** | **5 节点** |
+| ComfyUI-Resolve | 1 | ✅ | 不需要（纯张量） | 0 |
+| ComfyUI-ControlNet | 1 | ✅ | cv2 确定性（建议冒烟） | 0 |
+| ComfyUI-Inpaint | 1 | ✅ | 不需要（纯几何） | 0 |
+| **合计** | **36** | **✅** | **3 模式** | **5 节点** |
 
 ## L3 明细（需要模型的节点）
 
@@ -67,6 +70,9 @@
 | `comfyui_segment_sam2_mask` | segment | ✅ | ✅ | 见上 |
 | `comfyui_segment_matting` | segment | ✅ | ⏳ | 见上 |
 | `comfyui_segment_face_crop` | segment | ✅ | ✅ | 见上 |
+| `comfyui_resolve_scale_to_megapixels` | resolve | ✅ | N/A | 纯张量 |
+| `comfyui_controlnet_canny` | controlnet | ✅ | 建议一次 | cv2，确定性 |
+| `comfyui_inpaint_crop_by_mask` | inpaint | ✅ | N/A | 纯几何 |
 
 ## 收官执行清单（L3）
 
