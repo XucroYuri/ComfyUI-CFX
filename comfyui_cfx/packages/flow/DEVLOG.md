@@ -9,21 +9,28 @@
 - 许可：**MIT**（可包装宽松上游，保留署名/NOTICE）。
 
 ## 2. 状态看板
-| 模块 | 策略 | 来源 | 状态 |
-|---|---|---|---|
-| Context / Context Big / Merge / Switch | KEEP-DESIGN 包装 | rgthree | TODO |
-| Any Switch / Seed / Power Primitive / Power Puter | KEEP-DESIGN 包装 | rgthree | TODO |
-| Display Any/Int（并入 Show Text） | 合并 | rgthree+pysssss | TODO |
-| Reroute / 静音旁路编排 / 进度条 / Link Fixer | KEEP-DESIGN 包装 | rgthree | TODO |
-| Anything Everywhere / Combo Clone / 虚拟连线引擎 | KEEP-DESIGN **隔离**包装 | cg-use-everywhere | TODO |
-| StringFunction / Load-SaveText / ConstrainImage / Repeater / PlaySound / SystemNotification | REIMPLEMENT | pysssss | TODO |
-| `pysssss.binding` 控件绑定 DSL | 保留概念重实现 | pysssss | TODO |
+| 节点 | SPEC | 实现 | 审查 | 验收 | 状态 |
+|---|---|---|---|---|---|
+| `comfyui_flow_string_function` | specs/….md | nodes/string_function.py | ….review.md | tests/test_flow_string_function.py | VERIFY |
+| `comfyui_flow_show_text` | specs/….md | nodes/show_text.py | ….review.md | tests/test_flow_show_text.py | VERIFY |
+| `comfyui_flow_constrain_image` | specs/….md | nodes/constrain_image.py | ….review.md | tests/test_flow_constrain_image.py | VERIFY |
+| `comfyui_flow_repeater` | specs/….md | nodes/repeater.py | ….review.md | tests/test_flow_repeater.py | VERIFY |
+| `comfyui_flow_load_text` | specs/….md | nodes/text_file.py | ….review.md | tests/test_flow_text_file.py | VERIFY |
+| `comfyui_flow_save_text` | specs/….md | nodes/text_file.py | ….review.md | tests/test_flow_text_file.py | VERIFY |
+
+### 决策：不写包装代码
+- `rgthree` / `cg-use-everywhere`：**推荐可选依赖**，不包装、不复制（避免耦合其前端注入）。
+- **不移植** `PlaySound` / `SystemNotification`（OS 副作用、低价值、额外依赖）。
 
 ## 3. 里程碑
-- M1 — 成功 wrap rgthree 且旧 `class_type` 不变 | 状态：TODO
+- M1 — pysssss 子集（6 节点）完成并通过审查/测试 | 状态：VERIFY
+- M2 — 文档化 rgthree / cg-use-everywhere 兼容边界 | 状态：DONE
 
 ## 4. 变更日志（追加）
-- 2026-09-23 | Architect | 建立 Flow 包与开发记录，确定 wrap/隔离/重实现三分法 | SPEC.md | DONE
+- 2026-09-23 | Architect | 建立 Flow 包与开发记录 | SPEC.md | DONE
+- 2026-09-23 | Architect | 决策：不写包装代码，只重写 pysssss 薄节点；不移植 PlaySound/SystemNotification | SPEC.md | DONE
+- 2026-09-23 | Spec-Writer/Implementer/Adversary | string_function/show_text/constrain_image/repeater/load_text/save_text 全链路 PASS | nodes/*.py, specs/*.md | DONE
+- 2026-09-23 | Verifier | 6 节点单测通过 | tests/test_flow_*.py | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |
