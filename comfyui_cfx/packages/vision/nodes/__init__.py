@@ -1,11 +1,11 @@
 """Vision node registry."""
 
-from . import florence2, tags, text
+from . import blip, florence2, tags, text, wd14
 
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
-for _module in (florence2, text, tags):
+for _module in (florence2, wd14, blip, text, tags):
     _duplicates = NODE_CLASS_MAPPINGS.keys() & _module.NODE_CLASS_MAPPINGS.keys()
     if _duplicates:
         raise RuntimeError(f"duplicate node ids in vision: {sorted(_duplicates)}")
