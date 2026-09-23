@@ -11,13 +11,16 @@
 ## 2. 状态看板
 | 节点/模块 | SPEC | 实现 | 审查 | 验收 | 状态 |
 |---|---|---|---|---|---|
-| `comfyui_controlnet_canny` | specs/….md | nodes/canny.py | ….review.md | tests/test_controlnet_canny.py | TODO |
+| `comfyui_controlnet_canny` | specs/comfyui_controlnet_canny.md | nodes/canny.py | specs/comfyui_controlnet_canny.review.md | tests/test_controlnet_canny.py | VERIFY |
 
 ## 3. 里程碑
-- M1 — Canny 预处理器（cv2 实现，确定性） | 状态：TODO
+- M1 — Canny 预处理器（cv2 实现，确定性） | 状态：VERIFY
 
 ## 4. 变更日志（追加）
 - 2026-09-24 | Architect | 建立 ControlNet 包与开发记录 | SPEC.md | DONE
+- 2026-09-24 | Implementer | 实现 canny 预处理器（cv2 惰性导入，IMAGE+MASK） | nodes/canny.py | IMPL
+- 2026-09-24 | Scribe | 补写契约与对抗性审查并注册节点 | specs/comfyui_controlnet_canny.md, specs/comfyui_controlnet_canny.review.md, nodes/__init__.py | REVIEW
+- 2026-09-24 | Verifier | pytest + spec_lint + license_gate 全绿 | tests/test_controlnet_canny.py | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |
