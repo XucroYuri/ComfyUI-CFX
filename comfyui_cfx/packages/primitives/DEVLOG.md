@@ -16,10 +16,10 @@
 | `comfyui_primitives_boolean` | specs/….md | nodes/boolean.py | ….review.md | tests/test_primitives_boolean.py | VERIFY |
 | `comfyui_primitives_math` | specs/….md | nodes/math.py | ….review.md | tests/test_primitives_math.py | VERIFY |
 | `comfyui_primitives_text` | specs/….md | nodes/text.py | ….review.md | tests/test_primitives_text.py | VERIFY |
-| `comfyui_primitives_image_crop` | | | | | TODO |
-| `comfyui_primitives_image_transform` | | | | | TODO |
-| `comfyui_primitives_image_stitch` | | | | | TODO |
-| `comfyui_primitives_mask_ops` | | | | | TODO |
+| `comfyui_primitives_image_crop` | specs/….md | nodes/crop.py | ….review.md | tests/test_primitives_image_crop.py | VERIFY |
+| `comfyui_primitives_image_transform` | specs/….md | nodes/transform.py | ….review.md | tests/test_primitives_image_transform.py | VERIFY |
+| `comfyui_primitives_image_stitch` | specs/….md | nodes/stitch.py | ….review.md | tests/test_primitives_image_stitch.py | VERIFY |
+| `comfyui_primitives_mask_ops` | specs/….md | nodes/mask.py | ….review.md | tests/test_primitives_mask_ops.py | VERIFY |
 | `comfyui_primitives_batch_list` | | | | | TODO |
 | `comfyui_primitives_resolution` | | | | | TODO |
 | `comfyui_primitives_save_image_metadata` | | | | | TODO |
@@ -27,7 +27,8 @@
 
 ## 3. 里程碑
 - M1 — `image_resize` 全链路（SPEC→IMPL→REVIEW→VERIFY）跑通 | 状态：DONE
-- M2 — Switch/Boolean/Math/Text 完成 | 状态：VERIFY
+- M2 — Switch/Boolean/Math/Text 完成 | 状态：DONE
+- M3 — Crop/Transform/Stitch/MaskOps 完成 | 状态：VERIFY
 
 ## 4. 变更日志（追加）
 - 2026-09-23 | Architect | 建立 Primitives 包与开发记录 | SPEC.md | DONE
@@ -39,6 +40,10 @@
 - 2026-09-23 | Implementer | 实现 switch/boolean/math/text（含 AST 白名单数学） | nodes/{switch,boolean,math,text}.py | IMPL
 - 2026-09-23 | Adversary | 四节点 verdict PASS；修正 replace 空 search 缺陷 | specs/*.review.md | DONE
 - 2026-09-23 | Verifier | 四节点单测通过 | tests/test_primitives_{switch,boolean,math,text}.py | VERIFY
+- 2026-09-23 | Spec-Writer | 写 crop/transform/stitch/mask_ops 契约与审查 | specs/*.md | DONE
+- 2026-09-23 | Implementer | 实现 crop/transform/stitch/mask_ops（fill_holes 用 scipy.ndimage） | nodes/{crop,transform,stitch,mask}.py | IMPL
+- 2026-09-23 | Adversary | 四节点 verdict PASS | specs/*.review.md | DONE
+- 2026-09-23 | Verifier | M3 单测通过 | tests/test_primitives_{image_crop,image_transform,image_stitch,mask_ops}.py | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |

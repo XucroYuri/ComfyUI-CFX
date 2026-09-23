@@ -14,7 +14,7 @@ essentials、AGSoft、YCNodes（**无证**）、Jjk、controlaltai、image-saver
 MIT。**禁止复制** GPL/无证代码；`tools/license_gate.py` 强制。
 
 ## 依赖
-`comfyui_cfx.core`；ComfyUI 自带。
+`comfyui_cfx.core`；ComfyUI 自带（含 `scipy.ndimage`，用于掩码填洞）。
 
 ## 节点 ID 前缀
 `comfyui_primitives_<verb>_<noun>` · 分类 `ComfyUI-Primitives/<Sub>`
