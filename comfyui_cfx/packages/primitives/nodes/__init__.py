@@ -1,11 +1,11 @@
 """Primitives node registry."""
 
-from . import boolean, crop, image, mask, math, stitch, switch, text, transform
+from . import batch, boolean, crop, image, mask, math, resolution, save, seed, stitch, switch, text, transform
 
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
-for _module in (image, crop, transform, stitch, switch, boolean, math, text, mask):
+for _module in (image, crop, transform, stitch, batch, switch, boolean, math, text, mask, resolution, seed, save):
     _duplicates = NODE_CLASS_MAPPINGS.keys() & _module.NODE_CLASS_MAPPINGS.keys()
     if _duplicates:
         raise RuntimeError(f"duplicate node ids in primitives: {sorted(_duplicates)}")

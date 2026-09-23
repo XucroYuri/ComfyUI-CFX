@@ -29,7 +29,9 @@
 - 2026-09-23 | Architect | 重构为 `__init__.py` 薄壳 + 可导入 `comfyui_cfx` 包，解决 pytest 收集冲突 | 本仓 | DONE
 - 2026-09-23 | Verifier | 10 项单测通过；spec_lint / license_gate 通过 | 本仓 | DONE
 - 2026-09-23 | Implementer | 首个模板节点 image_resize 全链路跑通 | packages/primitives | DONE
-- 2026-09-23 | Implementer | M2：switch/boolean/math/text 四节点完成并过审查 | packages/primitives | VERIFY
+- 2026-09-23 | Implementer | M2：switch/boolean/math/text 四节点完成并过审查 | packages/primitives | DONE
+- 2026-09-23 | Implementer | M3：crop/transform/stitch/mask_ops 完成 | packages/primitives | DONE
+- 2026-09-23 | Implementer | M4：batch/split/seed/resolution/save 完成，primitives 收口（14 节点） | packages/primitives | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |

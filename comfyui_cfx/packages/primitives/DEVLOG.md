@@ -20,15 +20,17 @@
 | `comfyui_primitives_image_transform` | specs/….md | nodes/transform.py | ….review.md | tests/test_primitives_image_transform.py | VERIFY |
 | `comfyui_primitives_image_stitch` | specs/….md | nodes/stitch.py | ….review.md | tests/test_primitives_image_stitch.py | VERIFY |
 | `comfyui_primitives_mask_ops` | specs/….md | nodes/mask.py | ….review.md | tests/test_primitives_mask_ops.py | VERIFY |
-| `comfyui_primitives_batch_list` | | | | | TODO |
-| `comfyui_primitives_resolution` | | | | | TODO |
-| `comfyui_primitives_save_image_metadata` | | | | | TODO |
-| `comfyui_primitives_seed` | | | | | TODO |
+| `comfyui_primitives_image_batch` | specs/….md | nodes/batch.py | ….review.md | tests/test_primitives_batch.py | VERIFY |
+| `comfyui_primitives_image_split` | specs/….md | nodes/batch.py | ….review.md | tests/test_primitives_batch.py | VERIFY |
+| `comfyui_primitives_resolution` | specs/….md | nodes/resolution.py | ….review.md | tests/test_primitives_resolution.py | VERIFY |
+| `comfyui_primitives_save_image_metadata` | specs/….md | nodes/save.py | ….review.md | tests/test_primitives_save.py | VERIFY |
+| `comfyui_primitives_seed` | specs/….md | nodes/seed.py | ….review.md | tests/test_primitives_seed.py | VERIFY |
 
 ## 3. 里程碑
 - M1 — `image_resize` 全链路（SPEC→IMPL→REVIEW→VERIFY）跑通 | 状态：DONE
 - M2 — Switch/Boolean/Math/Text 完成 | 状态：DONE
-- M3 — Crop/Transform/Stitch/MaskOps 完成 | 状态：VERIFY
+- M3 — Crop/Transform/Stitch/MaskOps 完成 | 状态：DONE
+- M4 — Batch/Split/Seed/Resolution/Save 完成 | 状态：VERIFY
 
 ## 4. 变更日志（追加）
 - 2026-09-23 | Architect | 建立 Primitives 包与开发记录 | SPEC.md | DONE
@@ -44,6 +46,9 @@
 - 2026-09-23 | Implementer | 实现 crop/transform/stitch/mask_ops（fill_holes 用 scipy.ndimage） | nodes/{crop,transform,stitch,mask}.py | IMPL
 - 2026-09-23 | Adversary | 四节点 verdict PASS | specs/*.review.md | DONE
 - 2026-09-23 | Verifier | M3 单测通过 | tests/test_primitives_{image_crop,image_transform,image_stitch,mask_ops}.py | VERIFY
+- 2026-09-23 | Architect | 将 `batch_list` 拆为 image_batch / image_split（ComfyUI 的 OUTPUT_IS_LIST 需在类定义期确定） | 本记录 | DONE
+- 2026-09-23 | Spec-Writer/Implementer/Adversary | M4：batch/split/seed/resolution/save 契约、实现、审查全部 PASS | nodes/*.py, specs/*.md | DONE
+- 2026-09-23 | Verifier | M4 单测通过 | tests/test_primitives_{batch,seed,resolution,save}.py | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |
