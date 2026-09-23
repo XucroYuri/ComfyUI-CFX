@@ -12,10 +12,10 @@
 | 节点 | SPEC | 实现 | 审查 | 验收 | 状态 |
 |---|---|---|---|---|---|
 | `comfyui_primitives_image_resize` | specs/image_resize.md | nodes/image.py | specs/image_resize.review.md | tests/test_primitives_image_resize.py | VERIFY |
-| `comfyui_primitives_switch` | | | | | TODO |
-| `comfyui_primitives_boolean` | | | | | TODO |
-| `comfyui_primitives_math` | | | | | TODO |
-| `comfyui_primitives_text` | | | | | TODO |
+| `comfyui_primitives_switch` | specs/….md | nodes/switch.py | ….review.md | tests/test_primitives_switch.py | VERIFY |
+| `comfyui_primitives_boolean` | specs/….md | nodes/boolean.py | ….review.md | tests/test_primitives_boolean.py | VERIFY |
+| `comfyui_primitives_math` | specs/….md | nodes/math.py | ….review.md | tests/test_primitives_math.py | VERIFY |
+| `comfyui_primitives_text` | specs/….md | nodes/text.py | ….review.md | tests/test_primitives_text.py | VERIFY |
 | `comfyui_primitives_image_crop` | | | | | TODO |
 | `comfyui_primitives_image_transform` | | | | | TODO |
 | `comfyui_primitives_image_stitch` | | | | | TODO |
@@ -26,8 +26,8 @@
 | `comfyui_primitives_seed` | | | | | TODO |
 
 ## 3. 里程碑
-- M1 — `image_resize` 全链路（SPEC→IMPL→REVIEW→VERIFY）跑通 | 状态：VERIFY
-- M2 — Switch/Boolean/Math/Text 完成 | 状态：TODO
+- M1 — `image_resize` 全链路（SPEC→IMPL→REVIEW→VERIFY）跑通 | 状态：DONE
+- M2 — Switch/Boolean/Math/Text 完成 | 状态：VERIFY
 
 ## 4. 变更日志（追加）
 - 2026-09-23 | Architect | 建立 Primitives 包与开发记录 | SPEC.md | DONE
@@ -35,6 +35,10 @@
 - 2026-09-23 | Implementer | 实现 CFXImageResize（stretch/crop/pad） | nodes/image.py | IMPL
 - 2026-09-23 | Adversary | 审查并给出 verdict PASS | specs/comfyui_primitives_image_resize.review.md | DONE
 - 2026-09-23 | Verifier | 10 项单测通过 | tests/test_primitives_image_resize.py | VERIFY
+- 2026-09-23 | Spec-Writer | 写 switch/boolean/math/text 四份契约与审查 | specs/*.md | DONE
+- 2026-09-23 | Implementer | 实现 switch/boolean/math/text（含 AST 白名单数学） | nodes/{switch,boolean,math,text}.py | IMPL
+- 2026-09-23 | Adversary | 四节点 verdict PASS；修正 replace 空 search 缺陷 | specs/*.review.md | DONE
+- 2026-09-23 | Verifier | 四节点单测通过 | tests/test_primitives_{switch,boolean,math,text}.py | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |
