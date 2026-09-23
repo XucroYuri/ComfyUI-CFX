@@ -9,23 +9,28 @@
 - 许可：本包 **MIT**；QwenVL 的 GPL 代码须隔离。
 
 ## 2. 状态看板
-| 模块 | 策略 | 状态 |
-|---|---|---|
-| `CFX Vision Model Loader` | REWRITE（统一注册表 + 有界 LRU） | TODO |
-| `CFX Florence-2 Tasks`（15 任务） | 采用 kijai 自带后端 | TODO |
-| `CFX WD14 Tagger` | KEEP-DESIGN + session 缓存 | TODO |
-| `CFX VLM Caption`（Qwen2.5/3-VL） | 主路径保留；GPL 隔离 | TODO |
-| `CFX BLIP Caption/Interrogate` | REWRITE（原生 BLIP） | TODO |
-| `CFX CLIP Interrogator` | WRAP（可选 extra） | TODO |
-| `compat.py` | NEW | TODO |
-| 删除 rmbg `AILab_Florence2*` / `qwen3vl_caption_bridge.py` | DELETE | TODO |
+| 节点/模块 | SPEC | 实现 | 审查 | 验收 | 状态 |
+|---|---|---|---|---|---|
+| `comfyui_vision_caption_clean` | specs/….md | nodes/text.py | ….review.md | tests/test_vision_caption_clean.py | VERIFY |
+| `comfyui_vision_tags_filter` | specs/….md | nodes/tags.py | ….review.md | tests/test_vision_tags_filter.py | VERIFY |
+| `comfyui_vision_florence2_loader` | specs/….md | nodes/florence2.py | ….review.md | tests/test_vision_florence2.py | VERIFY |
+| `comfyui_vision_florence2_run` | specs/….md | nodes/florence2.py | ….review.md | tests/test_vision_florence2.py | VERIFY（真实推理人工） |
+| `registry.py`（任务/模型/缓存键） | — | registry.py | — | tests/test_vision_registry.py | VERIFY |
+| `backend.py`（Florence-2 后端适配） | — | backend.py | — | tests/test_vision_florence2.py | VERIFY |
+| WD14 Tagger | — | — | — | — | TODO（M2） |
+| VLM Caption（Qwen，GPL 隔离） | — | — | — | — | TODO（M2） |
+| BLIP Caption/Interrogate | — | — | — | — | TODO（M2） |
+| 删除 rmbg `AILab_Florence2*` / `qwen3vl_caption_bridge.py` | — | — | — | — | TODO（迁移脚本） |
 
 ## 3. 里程碑
-- M1 — Loader + Florence-2 Tasks 可用且无 remote code | 状态：TODO
-- M2 — Qwen-VL 在 transformers 5.14.1 主路径 + FP8 修复 | 状态：TODO
+- M1 — 文本层 + 注册表 + Florence-2 加载/运行 | 状态：VERIFY
+- M2 — WD14 / VLM / BLIP | 状态：TODO
 
 ## 4. 变更日志（追加）
 - 2026-09-23 | Architect | 建立 Vision 包与开发记录 | SPEC.md | DONE
+- 2026-09-23 | Architect | 决策：Florence-2 复用 comfyui-florence2 自带后端；QwenVL GPL 隔离 | SPEC.md | DONE
+- 2026-09-23 | Spec-Writer/Implementer/Adversary | caption_clean/tags_filter/florence2(loader+run) 全链路 PASS | nodes/*.py, specs/*.md | DONE
+- 2026-09-23 | Verifier | 文本层与注册表单测通过；Florence-2 真实推理待人工验证 | tests/test_vision_*.py | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |

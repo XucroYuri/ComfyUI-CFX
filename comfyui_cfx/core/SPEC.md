@@ -17,6 +17,9 @@ MIT。
 | `memory.py` | 统一的模型释放序列 |
 | `paths.py` | 路径归属校验（路径安全） |
 | `logging.py` | 一次性告警 |
+| `anytype.py` | 任意类型 socket 助手 |
+
+> `memory.py`（统一释放助手）已移除：当前无节点调用，遵循"无死代码"原则，待有模型节点需要时再加。
 
 ## 决策
 - `docs/adr/0001-type-lattice.md`

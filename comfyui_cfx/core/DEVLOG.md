@@ -14,16 +14,17 @@
 | ADR-0002 依赖基线 | docs/adr/0002-dependency-baseline.md | — | — | DONE |
 | `types.py` | specs/types.md（待补） | core/types.py | — | IMPL |
 | `device.py` | specs/device.md（待补） | core/device.py | — | IMPL |
-| `memory.py` | specs/memory.md（待补） | core/memory.py | — | IMPL |
 | `paths.py` | specs/paths.md（待补） | core/paths.py | — | IMPL |
 | `logging.py` | specs/logging.md（待补） | core/logging.py | — | IMPL |
+| `anytype.py` | — | core/anytype.py | — | IMPL |
 
 ## 3. 里程碑
 - M1 — ADR-0001/0002 定稿 + types/device/memory/paths 可用 | 状态：IMPL（等测试）
 
 ## 4. 变更日志（追加）
 - 2026-09-23 | Architect | 冻结 ADR-0001/0002 | core/docs/adr | DONE
-- 2026-09-23 | Implementer | 实现 types/device/memory/paths/logging | core/*.py | IMPL
+- 2026-09-23 | Implementer | 实现 types/device/paths/logging | core/*.py | IMPL
+- 2026-09-23 | Implementer | 新增 anytype.py；移除未被调用的 memory.py（无死代码） | core/ | DONE
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |
