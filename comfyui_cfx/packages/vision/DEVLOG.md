@@ -19,13 +19,13 @@
 | `backend.py`（Florence-2 后端适配） | — | backend.py | — | tests/test_vision_florence2.py | VERIFY |
 | `comfyui_vision_wd14_tagger` | specs/….md | nodes/wd14.py（+ wd14.py） | ….review.md | tests/test_vision_wd14.py | VERIFY（ONNX 推理人工） |
 | `comfyui_vision_blip_caption` | specs/….md | nodes/blip.py | ….review.md | tests/test_vision_blip.py | VERIFY（推理人工） |
-| VLM Caption（Qwen2.5/3-VL，GPL 隔离） | — | — | — | — | TODO（M3） |
+| `comfyui_vision_vlm_caption` | specs/….md | nodes/vlm.py（+ vlm.py） | ….review.md | tests/test_vision_vlm.py | VERIFY（推理人工） |
 | 迁移旧节点 | — | tools/migrate.py | — | tests/test_migrate.py | VERIFY |
 
 ## 3. 里程碑
 - M1 — 文本层 + 注册表 + Florence-2 加载/运行 | 状态：DONE
-- M2 — WD14 / BLIP / 迁移工具 | 状态：VERIFY
-- M3 — VLM（Qwen，GPL 隔离） | 状态：TODO
+- M2 — WD14 / BLIP / 迁移工具 | 状态：DONE
+- M3 — VLM（Qwen2.5/3-VL，原生 transformers，GPL 隔离） | 状态：VERIFY
 
 ## 4. 变更日志（追加）
 - 2026-09-23 | Architect | 建立 Vision 包与开发记录 | SPEC.md | DONE
@@ -34,6 +34,8 @@
 - 2026-09-23 | Verifier | 文本层与注册表单测通过；Florence-2 真实推理已人工验证 | tests/test_vision_*.py | VERIFY
 - 2026-09-24 | Spec-Writer/Implementer/Adversary | M2：wd14_tagger/blip_caption 全链路 PASS；新增 tools/migrate.py 与测试 | nodes/*.py, specs/*.md, tools/migrate.py | DONE
 - 2026-09-24 | Verifier | WD14 纯函数（预处理/阈值/格式化）与迁移工具单测通过 | tests/test_vision_wd14.py, tests/test_migrate.py | VERIFY
+- 2026-09-24 | Spec-Writer/Implementer/Adversary | M3：vlm_caption（Qwen2.5/3-VL 原生 transformers，无 remote code，GPL 隔离）全链路 PASS | nodes/vlm.py, specs/*.md | DONE
+- 2026-09-24 | Verifier | VLM 接口/消息构造/延迟导入单测通过；真实推理待人工验证 | tests/test_vision_vlm.py | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |
