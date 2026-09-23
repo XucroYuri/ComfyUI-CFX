@@ -16,6 +16,7 @@ essentials（MIT）。
 
 ## 依赖约束与范围（已定）
 - 文本检测统一走 `transformers.AutoModelForZeroShotObjectDetection`，弃 `groundingdino-py` 与 vendored fork（三套→一套）。
+- 抠图使用 `rembg`（MIT）；FaceCrop 复用 `ComfyUI-AutoCropFaces`（MIT）；SAM2 复用 `ComfyUI-segment-anything-2`（Apache-2.0）。
 - **GPL 只重写行为**：`rmbg`、`impact-pack` 的对应节点不得复制代码。
 - SAM2：保留**一份** Apache 实现（后续 M2）；不再 vendor 第二份。
 - 删除计划：neverbiasu `comfyui-sam2`（与 kijai SAM2 100% 冗余）、`AGSoft/Pytorch_Retinaface`（与 AutoCropFaces 同源副本）、

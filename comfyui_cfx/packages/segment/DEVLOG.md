@@ -16,13 +16,13 @@
 | `registry.py`（家族/布局/缓存键） | — | registry.py | — | tests/test_segment_geometry.py | VERIFY |
 | `comfyui_segment_sam2_loader` | specs/….md | nodes/sam2.py（+ backend.py） | ….review.md | tests/test_segment_sam2.py | VERIFY（推理人工） |
 | `comfyui_segment_sam2_mask` | specs/….md | nodes/sam2.py | ….review.md | tests/test_segment_sam2.py | VERIFY（推理人工） |
-| 抠图（BiRefNet/RMBG，重写） | — | — | — | — | TODO（M3） |
-| FaceCrop（唯一 RetinaFace） | — | — | — | — | TODO（M3） |
+| `comfyui_segment_matting` | specs/….md | nodes/matting.py | ….review.md | tests/test_segment_matting.py | VERIFY（推理人工） |
+| `comfyui_segment_face_crop` | specs/….md | nodes/face.py（+ face_backend.py） | ….review.md | tests/test_segment_face.py | VERIFY（推理人工） |
 
 ## 3. 里程碑
 - M1 — 标注→掩码几何层 + GroundingDINO 文本检测 | 状态：VERIFY
 - M2 — SAM2（单份 Apache 实现，经后端复用）| 状态：DONE
-- M3 — 抠图 / FaceCrop | 状态：TODO
+- M3 — 抠图（rembg MIT）/ FaceCrop（AutoCropFaces MIT 复用）| 状态：VERIFY
 
 ## 4. 变更日志（追加）
 - 2026-09-23 | Architect | 建立 Segment 包与开发记录 | SPEC.md | DONE
@@ -33,6 +33,9 @@
 - 2026-09-24 | Spec-Writer/Implementer/Adversary | M2：sam2_loader/sam2_mask 全链路 PASS | nodes/sam2.py, specs/*.md | DONE
 - 2026-09-24 | Verifier | 后端定位/批次转换/接口单测通过；SAM2 真实推理待人工验证 | tests/test_segment_sam2.py | VERIFY
 - 2026-09-24 | Verifier | SAM2 真实推理端到端通过：加载 sam2.1_hiera_tiny(fp16) → 框提示 → MASK (1,768,768)、二值、覆盖 6.3% | verify_segment_sam2 | DONE
+- 2026-09-24 | Spec-Writer/Implementer/Adversary | M3：matting（rembg MIT）+ face_crop（AutoCropFaces MIT 复用）全链路 PASS | nodes/*.py, specs/*.md | DONE
+- 2026-09-24 | Verifier | 抠图 alpha 纯函数与 FaceCrop 后端/接口单测通过 | tests/test_segment_{matting,face}.py | VERIFY
+- 2026-09-24 | Verifier | FaceCrop 真实推理通过（example/kaffi/bridge 均无异常）；实测澄清「无人脸返回原图」并修正 SPEC | verify_segment_face | DONE
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |
