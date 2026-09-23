@@ -45,3 +45,11 @@ def annotations_to_mask(annotations, height: int, width: int, line_width: int = 
     if annotations.get("bboxes"):
         return boxes_to_mask(annotations["bboxes"], height, width, line_width)
     raise ValueError("annotations contain neither 'bboxes' nor 'polygons'")
+
+
+def annotations_to_box_batch(annotations) -> list:
+    """Convert annotation bboxes into the per-image batch shape SAM2 expects."""
+    if not isinstance(annotations, dict) or not annotations.get("bboxes"):
+        raise ValueError("annotations must contain 'bboxes'")
+    boxes = [[float(value) for value in box[:4]] for box in annotations["bboxes"]]
+    return [boxes]

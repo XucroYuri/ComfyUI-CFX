@@ -14,19 +14,25 @@
 | `comfyui_segment_annotations_to_mask` | specs/….md | nodes/annotations.py（+ geometry.py） | ….review.md | tests/test_segment_{geometry,annotations}.py | VERIFY |
 | `comfyui_segment_grounding_dino` | specs/….md | nodes/detect.py | ….review.md | tests/test_segment_detect.py | VERIFY（推理人工） |
 | `registry.py`（家族/布局/缓存键） | — | registry.py | — | tests/test_segment_geometry.py | VERIFY |
-| SAM2 掩码阶段（单份 Apache 实现） | — | — | — | — | TODO（M2） |
-| 抠图（BiRefNet/RMBG，重写） | — | — | — | — | TODO（M2） |
-| FaceCrop（唯一 RetinaFace） | — | — | — | — | TODO（M2） |
+| `comfyui_segment_sam2_loader` | specs/….md | nodes/sam2.py（+ backend.py） | ….review.md | tests/test_segment_sam2.py | VERIFY（推理人工） |
+| `comfyui_segment_sam2_mask` | specs/….md | nodes/sam2.py | ….review.md | tests/test_segment_sam2.py | VERIFY（推理人工） |
+| 抠图（BiRefNet/RMBG，重写） | — | — | — | — | TODO（M3） |
+| FaceCrop（唯一 RetinaFace） | — | — | — | — | TODO（M3） |
 
 ## 3. 里程碑
 - M1 — 标注→掩码几何层 + GroundingDINO 文本检测 | 状态：VERIFY
-- M2 — SAM2 掩码 / 抠图 / FaceCrop | 状态：TODO
+- M2 — SAM2（单份 Apache 实现，经后端复用）| 状态：DONE
+- M3 — 抠图 / FaceCrop | 状态：TODO
 
 ## 4. 变更日志（追加）
 - 2026-09-23 | Architect | 建立 Segment 包与开发记录 | SPEC.md | DONE
 - 2026-09-23 | Architect | 决策：文本检测统一 transformers；GPL 只重写；SAM2 只留一份 | SPEC.md | DONE
 - 2026-09-24 | Spec-Writer/Implementer/Adversary | M1：annotations_to_mask + grounding_dino 全链路 PASS | nodes/*.py, specs/*.md | DONE
 - 2026-09-24 | Verifier | 几何/分析/检测接口单测通过 | tests/test_segment_*.py | VERIFY
+- 2026-09-24 | Architect | 决策：SAM2 复用 Apache 后端（不 vendor 第三份），CPU 强制 fp32 | backend.py | DONE
+- 2026-09-24 | Spec-Writer/Implementer/Adversary | M2：sam2_loader/sam2_mask 全链路 PASS | nodes/sam2.py, specs/*.md | DONE
+- 2026-09-24 | Verifier | 后端定位/批次转换/接口单测通过；SAM2 真实推理待人工验证 | tests/test_segment_sam2.py | VERIFY
+- 2026-09-24 | Verifier | SAM2 真实推理端到端通过：加载 sam2.1_hiera_tiny(fp16) → 框提示 → MASK (1,768,768)、二值、覆盖 6.3% | verify_segment_sam2 | DONE
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |
