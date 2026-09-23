@@ -9,22 +9,24 @@
 - 许可：本包 **MIT**；GPL 只重写行为。
 
 ## 2. 状态看板
-| 模块 | 策略 | 状态 |
-|---|---|---|
-| `SegmentModelLoader`（family → SAM/GDINO/BiRefNet/…） | NEW（单 manifest + 单根目录） | TODO |
-| `SegmentDetect`（transformers GDINO / Ultralytics） | REWRITE | TODO |
-| `SegmentMask`（SAM 族，含视频） | 保留一份 Apache SAM2 | TODO |
-| `SegmentRefineMask` | REWRITE | TODO |
-| `FaceCrop`（唯一 RetinaFace） | 采用 AutoCropFaces(MIT) | TODO |
-| 兼容转换器 `SEGS↔MASK`、`Florence2BoxesToMask` | NEW | TODO |
-| 删除：neverbiasu sam2 / AGSoft RetinaFace / rmbg Florence2 与 vendored sam2 | DELETE | TODO |
+| 节点/模块 | SPEC | 实现 | 审查 | 验收 | 状态 |
+|---|---|---|---|---|---|
+| `comfyui_segment_annotations_to_mask` | specs/….md | nodes/annotations.py（+ geometry.py） | ….review.md | tests/test_segment_{geometry,annotations}.py | VERIFY |
+| `comfyui_segment_grounding_dino` | specs/….md | nodes/detect.py | ….review.md | tests/test_segment_detect.py | VERIFY（推理人工） |
+| `registry.py`（家族/布局/缓存键） | — | registry.py | — | tests/test_segment_geometry.py | VERIFY |
+| SAM2 掩码阶段（单份 Apache 实现） | — | — | — | — | TODO（M2） |
+| 抠图（BiRefNet/RMBG，重写） | — | — | — | — | TODO（M2） |
+| FaceCrop（唯一 RetinaFace） | — | — | — | — | TODO（M2） |
 
 ## 3. 里程碑
-- M1 — Loader + Detect(GDINO) + Mask(SAM2) 可用 | 状态：TODO
-- M2 — RefineMask 与 FaceCrop 完成 | 状态：TODO
+- M1 — 标注→掩码几何层 + GroundingDINO 文本检测 | 状态：VERIFY
+- M2 — SAM2 掩码 / 抠图 / FaceCrop | 状态：TODO
 
 ## 4. 变更日志（追加）
 - 2026-09-23 | Architect | 建立 Segment 包与开发记录 | SPEC.md | DONE
+- 2026-09-23 | Architect | 决策：文本检测统一 transformers；GPL 只重写；SAM2 只留一份 | SPEC.md | DONE
+- 2026-09-24 | Spec-Writer/Implementer/Adversary | M1：annotations_to_mask + grounding_dino 全链路 PASS | nodes/*.py, specs/*.md | DONE
+- 2026-09-24 | Verifier | 几何/分析/检测接口单测通过 | tests/test_segment_*.py | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |
