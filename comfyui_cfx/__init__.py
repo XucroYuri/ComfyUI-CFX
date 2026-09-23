@@ -1,0 +1,20 @@
+"""ComfyUI-CFX aggregated node mappings.
+
+Every domain package under ``packages/`` exposes ``NODE_CLASS_MAPPINGS`` and
+``NODE_DISPLAY_NAME_MAPPINGS``; this module merges them and fails loudly on
+duplicate node ids.
+"""
+
+from .packages import flow, primitives, segment, vision
+
+NODE_CLASS_MAPPINGS = {}
+NODE_DISPLAY_NAME_MAPPINGS = {}
+
+for _package in (primitives, flow, vision, segment):
+    _duplicates = NODE_CLASS_MAPPINGS.keys() & _package.NODE_CLASS_MAPPINGS.keys()
+    if _duplicates:
+        raise RuntimeError(f"duplicate node ids across packages: {sorted(_duplicates)}")
+    NODE_CLASS_MAPPINGS.update(_package.NODE_CLASS_MAPPINGS)
+    NODE_DISPLAY_NAME_MAPPINGS.update(_package.NODE_DISPLAY_NAME_MAPPINGS)
+
+__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS"]

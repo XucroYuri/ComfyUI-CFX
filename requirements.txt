@@ -1,0 +1,3 @@
+# Runtime deps for the default-enabled packages.
+# ComfyUI already provides torch/numpy/Pillow; keep this file minimal.
+# Domain packages add extras only when they need them.
