@@ -56,8 +56,8 @@ class CFXMatting:
         from rembg import remove
 
         session = get_session(model)
-        first = ensure_image(image)[0].cpu().numpy()
-        pil = Image.fromarray((first.clamp(0, 1).numpy() * 255.0).round().astype("uint8"))
+        first = ensure_image(image)[0].clamp(0, 1).cpu().numpy()
+        pil = Image.fromarray((first * 255.0).round().astype("uint8"))
 
         cutout = np.asarray(remove(pil, session=session))
         mask = alpha_to_mask(cutout)

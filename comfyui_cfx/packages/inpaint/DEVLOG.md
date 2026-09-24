@@ -13,6 +13,7 @@
 |---|---|---|---|---|---|
 | `comfyui_inpaint_crop_by_mask` | specs/….md | nodes/crop.py | ….review.md | tests/test_inpaint_crop.py | VERIFY |
 | `comfyui_inpaint_stitch` | specs/….md | nodes/stitch.py | ….review.md | tests/test_inpaint_stitch.py | VERIFY |
+| `comfyui_inpaint_outpaint_canvas` | specs/….md | nodes/outpaint.py | ….review.md | tests/test_inpaint_outpaint.py | VERIFY |
 
 ## 3. 里程碑
 - M1 — crop-by-mask（纯几何，含 crop data JSON） | 状态：VERIFY
@@ -25,6 +26,9 @@
 - 2026-09-24 | Implementer | 实现 stitch-crop 逆操作节点（clamp 贴回/mask 加权混合/不修改输入） | nodes/stitch.py | VERIFY
 - 2026-09-24 | Implementer | 编写契约与对抗性审查 | specs/comfyui_inpaint_stitch.md, specs/comfyui_inpaint_stitch.review.md | VERIFY
 - 2026-09-24 | Implementer | 验收测试（往返/mask 混合/patch 尺寸/缺键/原始尺寸） | tests/test_inpaint_stitch.py | VERIFY
+- 2026-09-24 | Implementer | 实现 outpaint-canvas 扩图节点（fill 边框/掩码标 1/fill clamp） | nodes/outpaint.py | VERIFY
+- 2026-09-24 | Implementer | 编写契约与对抗性审查 | specs/comfyui_inpaint_outpaint_canvas.md, specs/comfyui_inpaint_outpaint_canvas.review.md | VERIFY
+- 2026-09-24 | Implementer | 验收测试（画布尺寸/边框 fill/原图区域/掩码边框/零边距/HW 掩码） | tests/test_inpaint_outpaint.py | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |

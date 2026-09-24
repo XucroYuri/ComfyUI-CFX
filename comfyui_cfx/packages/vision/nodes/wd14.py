@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 from ....core.types import ensure_image
-from ..wd14 import WD14_MODELS, format_tags, get_session, load_tag_rows, model_files, prepare_image, select_tags
+from ..wd14 import WD14_MODELS, download_model, format_tags, get_session, load_tag_rows, prepare_image, select_tags
 
 
 class CFXWD14Tagger:
@@ -30,16 +30,16 @@ class CFXWD14Tagger:
 
     def run(self, image, model, general_threshold=0.35, character_threshold=0.85,
             replace_underscore=True, exclude_tags=""):
-        _, csv_path = model_files(model)
+        _, csv_path = download_model(model)
         rows = load_tag_rows(csv_path)
         session = get_session(model)
 
         input_name = session.get_inputs()[0].name
-        shape = session.get_inputs()[0].shape
-        size = shape[-1] if isinstance(shape[-1], int) else shape[-2]
+        dims = [dim for dim in session.get_inputs()[0].shape[1:3] if isinstance(dim, int)]
+        size = max(dims) if dims else 448
 
-        first = ensure_image(image)[0].cpu().numpy()
-        pil = Image.fromarray((first.clamp(0, 1).numpy() * 255.0).round().astype(np.uint8))
+        first = ensure_image(image)[0].clamp(0, 1).cpu().numpy()
+        pil = Image.fromarray((first * 255.0).round().astype(np.uint8))
         batch = prepare_image(pil, int(size))[None, ...]
 
         probs = session.run(None, {input_name: batch})[0][0]

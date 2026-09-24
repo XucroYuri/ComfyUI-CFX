@@ -49,8 +49,8 @@ class CFXGroundingDinoDetect:
         processor, network = _load(model)
         device = network.device
 
-        first = ensure_image(image)[0].cpu().numpy()
-        pil = Image.fromarray((first.clamp(0, 1).numpy() * 255.0).round().astype("uint8"))
+        first = ensure_image(image)[0].clamp(0, 1).cpu().numpy()
+        pil = Image.fromarray((first * 255.0).round().astype("uint8"))
 
         inputs = processor(images=pil, text=prompt, return_tensors="pt").to(device)
         with torch.no_grad():
@@ -58,13 +58,13 @@ class CFXGroundingDinoDetect:
         result = processor.post_process_grounded_object_detection(
             outputs,
             inputs.input_ids,
-            box_threshold=box_threshold,
+            threshold=box_threshold,
             text_threshold=text_threshold,
             target_sizes=[pil.size[::-1]],
         )[0]
 
         boxes = [[float(v) for v in box] for box in result["boxes"].cpu().tolist()]
-        labels = [str(label) for label in result["labels"]]
+        labels = [str(label) for label in (result["text_labels"] if "text_labels" in result else result["labels"])]
         mask = boxes_to_mask(boxes, pil.height, pil.width)
         return ({"bboxes": boxes, "labels": labels}, torch.from_numpy(mask)[None, ...].contiguous())
 

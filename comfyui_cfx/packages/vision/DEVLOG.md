@@ -17,7 +17,7 @@
 | `comfyui_vision_florence2_run` | specs/….md | nodes/florence2.py | ….review.md | tests/test_vision_florence2.py | VERIFY（真实推理人工） |
 | `registry.py`（任务/模型/缓存键） | — | registry.py | — | tests/test_vision_registry.py | VERIFY |
 | `backend.py`（Florence-2 后端适配） | — | backend.py | — | tests/test_vision_florence2.py | VERIFY |
-| `comfyui_vision_wd14_tagger` | specs/….md | nodes/wd14.py（+ wd14.py） | ….review.md | tests/test_vision_wd14.py | VERIFY（ONNX 推理人工） |
+| `comfyui_vision_wd14_tagger` | specs/….md | nodes/wd14.py（+ wd14.py） | ….review.md | tests/test_vision_wd14.py | DONE（真实推理通过，修复 3 处 bug） |
 | `comfyui_vision_blip_caption` | specs/….md | nodes/blip.py | ….review.md | tests/test_vision_blip.py | VERIFY（推理人工） |
 | `comfyui_vision_vlm_caption` | specs/….md | nodes/vlm.py（+ vlm.py） | ….review.md | tests/test_vision_vlm.py | VERIFY（推理人工） |
 | 迁移旧节点 | — | tools/migrate.py | — | tests/test_migrate.py | VERIFY |
@@ -36,6 +36,9 @@
 - 2026-09-24 | Verifier | WD14 纯函数（预处理/阈值/格式化）与迁移工具单测通过 | tests/test_vision_wd14.py, tests/test_migrate.py | VERIFY
 - 2026-09-24 | Spec-Writer/Implementer/Adversary | M3：vlm_caption（Qwen2.5/3-VL 原生 transformers，无 remote code，GPL 隔离）全链路 PASS | nodes/vlm.py, specs/*.md | DONE
 - 2026-09-24 | Verifier | VLM 接口/消息构造/延迟导入单测通过；真实推理待人工验证 | tests/test_vision_vlm.py | VERIFY
+- 2026-09-24 | Verifier | WD14 真实推理**失败**：CSV 先于下载、ndarray 上调 `.clamp`、输入尺寸取成通道维 3 | tools/verify/wd14.py | REJECTED
+- 2026-09-24 | Implementer | 修复 WD14 三处：先 `download_model` → 读 CSV；tensor 上 clamp 再转 numpy；空间尺寸取 `shape[1:3]` 最大值 | nodes/wd14.py, wd14.py | FIXED
+- 2026-09-24 | Verifier | WD14 真实推理通过：`solo, smile, 1girl, outstretched arms, dress, ...` | tools/verify/wd14.py | DONE
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |

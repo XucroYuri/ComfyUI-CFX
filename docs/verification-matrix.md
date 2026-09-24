@@ -11,12 +11,12 @@
 |---|---|---|---|---|
 | ComfyUI-Primitives | 14 | ✅ | 不需要（纯运算） | 0 |
 | ComfyUI-Flow | 6 | ✅ | 不需要（纯运算/文本） | 0 |
-| ComfyUI-Vision | 7 | ✅ | Florence-2 ✅ | 3（WD14 / BLIP / VLM） |
-| ComfyUI-Segment | 6 | ✅ | SAM2 ✅ / FaceCrop ✅ | 2（GroundingDINO / Matting） |
+| ComfyUI-Vision | 7 | ✅ | Florence-2 ✅ / WD14 ✅ | 2（BLIP / VLM） |
+| ComfyUI-Segment | 6 | ✅ | SAM2 ✅ / FaceCrop ✅ / GDINO ✅ / Matting ✅ | 0 |
 | ComfyUI-Resolve | 2 | ✅ | 不需要（纯张量 / 可 stub 测） | 1（模型放大） |
 | ComfyUI-ControlNet | 2 | ✅ | cv2 确定性（建议冒烟） | 0 |
-| ComfyUI-Inpaint | 2 | ✅ | 不需要（纯几何） | 0 |
-| **合计** | **39** | **✅** | **3 模式** | **6 节点** |
+| ComfyUI-Inpaint | 3 | ✅ | 不需要（纯几何） | 0 |
+| **合计** | **40** | **✅** | **6 项已真实运行** | **3 节点** |
 
 ## L3 明细（需要模型的节点）
 
@@ -25,14 +25,14 @@
 | `comfyui_vision_florence2_loader` / `_run` | comfyui-florence2 + PromptGen v2.0 | 已在本地 | tags 非空；检测任务返回 dict | ✅ 已通过 |
 | `comfyui_segment_sam2_loader` / `_mask` | ComfyUI-segment-anything-2 + sam2.1_hiera_tiny-fp16 | 已在本地 | MASK `(1,H,W)`、二值、非空 | ✅ 已通过 |
 | `comfyui_segment_face_crop` | ComfyUI-AutoCropFaces（权重随插件 1.7MB） | 0 | 无人脸返回原图；有脸返回裁剪 | ✅ 已通过 |
-| `comfyui_vision_wd14_tagger` | SmilingWolf `wd-v1-4-moat-tagger-v2` | ~0.3 GB | 非空标签串、含 general 标签 | ⏳ 待做 |
+| `comfyui_vision_wd14_tagger` | SmilingWolf `wd-v1-4-moat-tagger-v2` | 已下载 ~0.31 GB | 非空标签串、含 general 标签 | ✅ 已通过（修复 3 处 bug） |
 | `comfyui_vision_blip_caption` | `Salesforce/blip-image-captioning-base` | ~1 GB | 非空英文描述 | ⏳ 待做 |
 | `comfyui_vision_vlm_caption` | `Qwen/Qwen2.5-VL-3B-Instruct` | ~7 GB | 非空描述 | ⏳ 待做 |
-| `comfyui_segment_grounding_dino` | `IDEA-Research/grounding-dino-tiny` | ~0.7 GB | boxes + 非空 MASK | ⏳ 待做 |
-| `comfyui_segment_matting` | rembg `birefnet-general`（或 `u2net`） | ~0.9 GB (u2net ~0.18) | alpha MASK + RGBA | ⏳ 待做 |
+| `comfyui_segment_grounding_dino` | `IDEA-Research/grounding-dino-tiny` | 已下载 ~0.66 GB | boxes + MASK | ✅ 已通过（修复 2 处 bug，含 transformers 5 `threshold` 改名） |
+| `comfyui_segment_matting` | rembg `u2net` | 已下载 ~0.18 GB | alpha MASK + RGBA | ✅ 已通过（修复 1 处 bug） |
 | `comfyui_resolve_upscale_tiled` | 超分模型（如 4x-UltraSharp / RealESRGAN_x4plus） | ~0.07 GB | 4x 尺寸、无接缝 | ⏳ 待做 |
 
-**L3 模型下载总预算：约 10 GB**（可用 `u2net` 把抠图降到 ~0.18 GB，总计约 9.3 GB）。
+**已下载 ~1.15 GB**（WD14 + GDINO + u2net）；**剩余预算约 8.1 GB**（BLIP ~1 GB + Qwen ~7 GB + 超分模型 ~0.07 GB）。
 
 ## 全节点清单
 
@@ -60,16 +60,16 @@
 | `comfyui_flow_save_text` | flow | ✅ | 建议一次 | 同上 |
 | `comfyui_vision_florence2_loader` | vision | ✅ | ✅ | 见上 |
 | `comfyui_vision_florence2_run` | vision | ✅ | ✅ | 见上 |
-| `comfyui_vision_wd14_tagger` | vision | ✅ | ⏳ | 见上 |
+| `comfyui_vision_wd14_tagger` | vision | ✅ | ✅ | 见上（修复 3 处 bug） |
 | `comfyui_vision_blip_caption` | vision | ✅ | ⏳ | 见上 |
 | `comfyui_vision_vlm_caption` | vision | ✅ | ⏳ | 见上 |
 | `comfyui_vision_caption_clean` | vision | ✅ | N/A | 纯文本 |
 | `comfyui_vision_tags_filter` | vision | ✅ | N/A | 纯文本 |
 | `comfyui_segment_annotations_to_mask` | segment | ✅ | N/A | 纯几何 |
-| `comfyui_segment_grounding_dino` | segment | ✅ | ⏳ | 见上 |
+| `comfyui_segment_grounding_dino` | segment | ✅ | ✅ | 见上（修复 2 处 bug） |
 | `comfyui_segment_sam2_loader` | segment | ✅ | ✅ | 见上 |
 | `comfyui_segment_sam2_mask` | segment | ✅ | ✅ | 见上 |
-| `comfyui_segment_matting` | segment | ✅ | ⏳ | 见上 |
+| `comfyui_segment_matting` | segment | ✅ | ✅ | 见上（修复 1 处 bug） |
 | `comfyui_segment_face_crop` | segment | ✅ | ✅ | 见上 |
 | `comfyui_resolve_scale_to_megapixels` | resolve | ✅ | N/A | 纯张量 |
 | `comfyui_resolve_upscale_tiled` | resolve | ✅ | ⏳ | 见上（stub 已测） |
@@ -77,6 +77,7 @@
 | `comfyui_controlnet_lineart` | controlnet | ✅ | 建议一次 | cv2，确定性（非神经近似） |
 | `comfyui_inpaint_crop_by_mask` | inpaint | ✅ | N/A | 纯几何 |
 | `comfyui_inpaint_stitch` | inpaint | ✅ | N/A | 纯几何 |
+| `comfyui_inpaint_outpaint_canvas` | inpaint | ✅ | N/A | 纯几何 |
 
 ## 收官执行清单（L3）
 
