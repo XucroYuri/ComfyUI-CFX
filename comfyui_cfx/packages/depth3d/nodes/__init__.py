@@ -1,11 +1,11 @@
 """Depth3D node registry."""
 
-from . import normalize
+from . import colormap, normalize
 
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
-for _module in (normalize,):
+for _module in (normalize, colormap):
     _duplicates = NODE_CLASS_MAPPINGS.keys() & _module.NODE_CLASS_MAPPINGS.keys()
     if _duplicates:
         raise RuntimeError(f"duplicate node ids in depth3d: {sorted(_duplicates)}")

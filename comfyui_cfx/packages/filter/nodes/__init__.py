@@ -1,11 +1,11 @@
 """Filter node registry."""
 
-from . import high_pass
+from . import high_pass, sharpen
 
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
-for _module in (high_pass,):
+for _module in (high_pass, sharpen):
     _duplicates = NODE_CLASS_MAPPINGS.keys() & _module.NODE_CLASS_MAPPINGS.keys()
     if _duplicates:
         raise RuntimeError(f"duplicate node ids in filter: {sorted(_duplicates)}")

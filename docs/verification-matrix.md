@@ -14,16 +14,16 @@
 | ComfyUI-Vision | 7 | ✅ | Florence-2 ✅ / WD14 ✅ / BLIP ✅ / VLM ✅ | 0 |
 | ComfyUI-Segment | 6 | ✅ | SAM2 ✅ / FaceCrop ✅ / GDINO ✅ / Matting ✅ | 0 |
 | ComfyUI-Resolve | 2 | ✅ | 模型放大 ✅ | 0 |
-| ComfyUI-ControlNet | 2 | ✅ | cv2 确定性（建议冒烟） | 0 |
-| ComfyUI-Inpaint | 3 | ✅ | 不需要（纯几何） | 0 |
-| ComfyUI-Depth3D | 1 | ✅ | 不需要（纯张量） | 0 |
+| ComfyUI-ControlNet | 3 | ✅ | cv2 确定性（建议冒烟） | 0 |
+| ComfyUI-Inpaint | 4 | ✅ | 不需要（纯几何） | 0 |
+| ComfyUI-Depth3D | 2 | ✅ | 不需要（纯张量） | 0 |
 | ComfyUI-Sampling | 2 | ✅ | 不需要（纯张量） | 0 |
-| ComfyUI-Video | 1 | ✅ | 不需要（纯张量） | 0 |
-| ComfyUI-Flux | 1 | ✅ | 不需要（纯张量） | 0 |
-| ComfyUI-Audio | 1 | ✅ | 不需要（纯张量） | 0 |
-| ComfyUI-Loaders | 1 | ✅ | 不需要（读文件头） | 0 |
-| ComfyUI-Filter | 1 | ✅ | 不需要（纯张量） | 0 |
-| **合计** | **48** | **✅** | **9 项已真实运行** | **0** |
+| ComfyUI-Video | 2 | ✅ | 不需要（纯张量） | 0 |
+| ComfyUI-Flux | 2 | ✅ | 不需要（纯张量） | 0 |
+| ComfyUI-Audio | 2 | ✅ | 不需要（纯张量） | 0 |
+| ComfyUI-Loaders | 2 | ✅ | 不需要（读文件头/元数据） | 0 |
+| ComfyUI-Filter | 2 | ✅ | 不需要（纯张量） | 0 |
+| **合计** | **56** | **✅** | **9 项已真实运行** | **0** |
 
 ## L3 明细（需要模型的节点）
 
@@ -93,6 +93,14 @@
 | `comfyui_audio_trim_silence` | audio | ✅ | N/A | 纯张量 |
 | `comfyui_loaders_gguf_header` | loaders | ✅ | N/A | 读文件头 + 路径校验 |
 | `comfyui_filter_high_pass` | filter | ✅ | N/A | 纯张量 |
+| `comfyui_controlnet_normal_map_from_depth` | controlnet | ✅ | N/A | 纯张量 |
+| `comfyui_inpaint_outpaint_to_ratio` | inpaint | ✅ | N/A | 纯几何 |
+| `comfyui_filter_sharpen` | filter | ✅ | N/A | 纯张量 |
+| `comfyui_audio_normalize` | audio | ✅ | N/A | 纯张量 |
+| `comfyui_video_pad_frames` | video | ✅ | N/A | 纯张量 |
+| `comfyui_loaders_safetensors_info` | loaders | ✅ | N/A | 读元数据 + 路径校验 |
+| `comfyui_flux_conditioning_concat` | flux | ✅ | N/A | 纯列表 |
+| `comfyui_depth3d_colormap` | depth3d | ✅ | N/A | 纯张量 + matplotlib |
 
 ## 收官执行清单（L3）
 

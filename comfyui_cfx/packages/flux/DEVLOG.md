@@ -12,6 +12,7 @@
 | 节点/模块 | SPEC | 实现 | 审查 | 验收 | 状态 |
 |---|---|---|---|---|---|
 | `comfyui_flux_conditioning_blend` | specs/….md | nodes/blend.py | ….review.md | tests/test_flux_blend.py | VERIFY |
+| `comfyui_flux_conditioning_concat` | specs/….md | nodes/concat.py | ….review.md | tests/test_flux_concat.py | VERIFY |
 
 ## 3. 里程碑
 - M1 — conditioning 混合节点 | 状态：VERIFY
@@ -21,3 +22,6 @@
 - 2026-09-24 | Spec-Writer | 编写 conditioning_blend SPEC 与对抗审查 | specs/comfyui_flux_conditioning_blend.md, specs/comfyui_flux_conditioning_blend.review.md | DONE
 - 2026-09-24 | Implementer | 实现 conditioning_blend 节点与注册表 | nodes/blend.py, nodes/__init__.py | DONE
 - 2026-09-24 | Verifier | conditioning_blend 单测通过 | tests/test_flux_blend.py | VERIFY
+- 2026-09-24 | Spec-Writer | 编写 conditioning_concat SPEC 与对抗审查 | specs/comfyui_flux_conditioning_concat.md, specs/comfyui_flux_conditioning_concat.review.md | DONE
+- 2026-09-24 | Implementer | 实现 conditioning_concat 节点与注册表 | nodes/concat.py, nodes/__init__.py | DONE
+- 2026-09-24 | Verifier | conditioning_concat 单测通过 | tests/test_flux_concat.py | VERIFY

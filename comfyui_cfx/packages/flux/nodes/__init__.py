@@ -1,11 +1,11 @@
 """Flux node registry."""
 
-from . import blend
+from . import blend, concat
 
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
-for _module in (blend,):
+for _module in (blend, concat):
     _duplicates = NODE_CLASS_MAPPINGS.keys() & _module.NODE_CLASS_MAPPINGS.keys()
     if _duplicates:
         raise RuntimeError(f"duplicate node ids in flux: {sorted(_duplicates)}")

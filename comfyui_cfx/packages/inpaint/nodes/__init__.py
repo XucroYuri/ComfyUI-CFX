@@ -1,11 +1,11 @@
 """Inpaint node registry."""
 
-from . import crop, outpaint, stitch
+from . import crop, outpaint, ratio, stitch
 
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
-for _module in (crop, stitch, outpaint):
+for _module in (crop, stitch, outpaint, ratio):
     _duplicates = NODE_CLASS_MAPPINGS.keys() & _module.NODE_CLASS_MAPPINGS.keys()
     if _duplicates:
         raise RuntimeError(f"duplicate node ids in inpaint: {sorted(_duplicates)}")

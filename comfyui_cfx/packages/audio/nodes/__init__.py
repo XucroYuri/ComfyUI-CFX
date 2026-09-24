@@ -1,11 +1,11 @@
 """Audio node registry."""
 
-from . import trim
+from . import normalize, trim
 
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
-for _module in (trim,):
+for _module in (trim, normalize):
     _duplicates = NODE_CLASS_MAPPINGS.keys() & _module.NODE_CLASS_MAPPINGS.keys()
     if _duplicates:
         raise RuntimeError(f"duplicate node ids in audio: {sorted(_duplicates)}")
