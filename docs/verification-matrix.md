@@ -11,7 +11,7 @@
 |---|---|---|---|---|
 | ComfyUI-Primitives | 14 | ✅ | 不需要（纯运算） | 0 |
 | ComfyUI-Flow | 6 | ✅ | 不需要（纯运算/文本） | 0 |
-| ComfyUI-Vision | 10 | ✅ | Florence-2 ✅ / Region ✅ / WD14 ✅ / BLIP ✅ / VLM ✅ / CLIP-IR ✅ | 1（BLIP2 下载中） |
+| ComfyUI-Vision | 10 | ✅ | Florence-2 ✅ / Region ✅ / WD14 ✅ / BLIP ✅ / BLIP2 ✅ / VLM ✅ / CLIP-IR ✅ | 0 |
 | ComfyUI-Segment | 12 | ✅ | SAM2(框/点/自动) ✅ / FaceCrop ✅ / GDINO ✅ / Matting ✅ / Text→Mask ✅ | 0 |
 | ComfyUI-Resolve | 2 | ✅ | 模型放大 ✅ | 0 |
 | ComfyUI-ControlNet | 3 | ✅ | cv2 确定性（建议冒烟） | 0 |
@@ -23,7 +23,7 @@
 | ComfyUI-Audio | 2 | ✅ | 不需要（纯张量） | 0 |
 | ComfyUI-Loaders | 2 | ✅ | 不需要（读文件头/元数据） | 0 |
 | ComfyUI-Filter | 2 | ✅ | 不需要（纯张量） | 0 |
-| **合计** | **65** | **✅** | **14 项已真实运行** | **1（BLIP2）** |
+| **合计** | **65** | **✅** | **15 项已真实运行** | **0** |
 
 ## L3 明细（需要模型的节点）
 
@@ -41,7 +41,7 @@
 | `comfyui_segment_text_to_mask` | GroundingDINO-tiny + SAM2 | 0（已有） | 检测框 + 非空 MASK | ✅ 已通过（3 框，覆盖 0.299）|
 | `comfyui_vision_clip_interrogator` | CLIP `ViT-L-14/openai` + BLIP | 已下载 ~2 GB | 非空英文描述 | ✅ 已通过 |
 | `comfyui_vision_florence2_region` | Florence-2（本机已有） | 0 | 区域描述非空且**无 loc token 回显** | ✅ 已通过（修复 loc token 清理） |
-| `comfyui_vision_blip2_caption` | `Salesforce/blip2-opt-2.7b` | ~15 GB | 非空英文描述 | ⏳ 下载中 |
+| `comfyui_vision_blip2_caption` | `Salesforce/blip2-opt-2.7b` | 已下载 ~15 GB | 非空英文描述 | ✅ 已通过（模型清单修正后） |
 | `comfyui_segment_sam2_auto_mask` | SAM2 自动分割（复用已有 checkpoint） | 0（已有） | MASK + 多个区域 | ✅ 已通过（23 个区域） |
 | `comfyui_resolve_upscale_tiled` | 超分模型（已装 `RealESRGAN_x4plus.pth`） | 0.06 GB（已有） | 4x 尺寸、无接缝 | ✅ 已通过（修复 1 处 bug） |
 
@@ -122,7 +122,7 @@
 | `comfyui_segment_sam2_points` | segment | ✅ | ✅ | SAM2 点位 |
 | `comfyui_segment_text_to_mask` | segment | ✅ | ✅ | GDINO + SAM2 |
 | `comfyui_segment_mask_to_bbox` | segment | ✅ | N/A | 纯几何 |
-| `comfyui_vision_blip2_caption` | vision | ✅ | ⏳ | 见上（模型清单已修正） |
+| `comfyui_vision_blip2_caption` | vision | ✅ | ✅ | 见上（模型清单已修正） |
 | `comfyui_vision_florence2_region` | vision | ✅ | ✅ | 见上 |
 | `comfyui_segment_sam2_auto_mask` | segment | ✅ | ✅ | 见上 |
 | `comfyui_segment_mask_to_segs` | segment | ✅ | N/A | SEGS 结构兼容（纯数据） |

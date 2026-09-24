@@ -10,7 +10,7 @@ from comfyui_cfx.packages.vision.nodes.blip2 import CFXBlip2Caption
 
 _, tensor = load_image(os.environ["COMFYUI_PATH"], "example.png")
 text = CFXBlip2Caption().run(
-    tensor, model="Salesforce/blip2-opt-350m", mode="caption", max_new_tokens=32, precision="bf16"
+    tensor, model="Salesforce/blip2-opt-2.7b", mode="caption", max_new_tokens=32, precision="bf16"
 )[0]
 assert text and text.strip(), "blip2 returned empty text"
 print("caption:", text[:200])

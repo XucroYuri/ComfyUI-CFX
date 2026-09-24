@@ -14,7 +14,7 @@ append-only development record (`DEVLOG.md`).
 | Packages | 14 |
 | Nodes | 65 |
 | Unit tests | 400 passing |
-| Real end-to-end verified | 14 nodes (models: Florence-2 incl. region, WD14, BLIP, Qwen2.5-VL, CLIP-Interrogator, GroundingDINO, rembg, SAM2 框/点/自动, RetinaFace, RealESRGAN) |
+| Real end-to-end verified | 15 nodes (models: Florence-2 incl. region, WD14, BLIP, BLIP2, Qwen2.5-VL, CLIP-Interrogator, GroundingDINO, rembg, SAM2 框/点/自动, RetinaFace, RealESRGAN) |
 | License | MIT (`packages/**` enforced MIT by `tools/license_gate.py`) |
 
 See `docs/verification-matrix.md` for the node-by-node verification ledger.

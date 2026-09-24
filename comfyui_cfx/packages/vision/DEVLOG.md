@@ -23,7 +23,7 @@
 | `comfyui_vision_vlm_caption` | specs/….md | nodes/vlm.py（+ vlm.py） | ….review.md | tests/test_vision_vlm.py | DONE（真实推理通过，修复 1 处 bug） |
 | `comfyui_vision_clip_interrogator` | specs/….md | nodes/clip_interrogator.py | ….review.md | tests/test_vision_clip_interrogator.py | DONE（真实推理通过：CLIP ViT-L-14 + BLIP） |
 | `comfyui_vision_florence2_region` | specs/….md | nodes/florence2_region.py | ….review.md | tests/test_vision_florence2_region.py | DONE（真实推理通过；修复 loc token 回显） |
-| `comfyui_vision_blip2_caption` | specs/….md | nodes/blip2.py | ….review.md | tests/test_vision_blip2_caption.py | VERIFY（模型清单已修正，权重下载中） |
+| `comfyui_vision_blip2_caption` | specs/….md | nodes/blip2.py | ….review.md | tests/test_vision_blip2_caption.py | DONE（真实推理通过：`blip2-opt-2.7b`） |
 | `comfyui_vision_clip_interrogator` | specs/….md | nodes/clip_interrogator.py | ….review.md | tests/test_vision_clip_interrogator.py | VERIFY |
 | `comfyui_vision_blip2_caption` | specs/….md | nodes/blip2.py | ….review.md | tests/test_vision_blip2_caption.py | VERIFY |
 | 迁移旧节点 | — | tools/migrate.py | — | tests/test_migrate.py | VERIFY |
@@ -56,7 +56,7 @@
 - 2026-09-24 | Implementer | 新增 `florence2_region`（区域描述/分类/OCR）与 `blip2_caption`；抽出 `run_florence2` 供两节点复用 | nodes/florence2*.py, nodes/blip2.py | IMPL
 - 2026-09-24 | Verifier | Region 真实推理通过；发现输出回显 `<loc_N>` 并加 `strip_loc_tokens` 清理（已复验干净） | tools/verify/florence2_region.py | DONE
 - 2026-09-24 | Verifier | BLIP2 首次验证**失败**：`Salesforce/blip2-opt-350m` 仓库 404；已改为真实存在的 3 个 caption checkpoint | tools/verify/blip2.py | FIXED
-- 2026-09-24 | Verifier | BLIP2 `opt-2.7b`（~15GB）后台下载中，L3 待完成 | tools/verify/blip2.py | PENDING
+- 2026-09-24 | Verifier | BLIP2 `opt-2.7b`（~15GB）真实推理通过：`a cartoon character with big ears and a pink dress`（下载中断后 HF 续传） | tools/verify/blip2.py | DONE
 - 2026-09-24 | Spec-Writer/Implementer/Adversary | clip_interrogator（延迟导入 + `MODE_METHODS` 分派）全链路 PASS | nodes/clip_interrogator.py, specs/*.md | VERIFY
 - 2026-09-24 | Spec-Writer/Implementer/Adversary | blip2_caption（原生 transformers，按 `(model, precision)` 缓存）全链路 PASS | nodes/blip2.py, specs/*.md | VERIFY
 - 2026-09-24 | Spec-Writer/Implementer/Adversary | florence2_region（区域描述/分类/OCR + 1000 格坐标量化）全链路 PASS | nodes/florence2_region.py, specs/*.md | VERIFY
