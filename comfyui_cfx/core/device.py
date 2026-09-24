@@ -1,7 +1,7 @@
 """Device and dtype policy shared by all cfx packages (ADR-0002)."""
 
-import torch
 import comfy.model_management as mm
+import torch
 
 DTYPES = {
     "fp32": torch.float32,

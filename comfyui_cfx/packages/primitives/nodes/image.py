@@ -3,8 +3,8 @@
 Template node for the SPEC -> IMPL -> REVIEW -> VERIFY pipeline.
 """
 
-import torch
 import comfy.utils
+import torch
 
 from ....core.types import ensure_image
 

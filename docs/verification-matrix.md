@@ -13,10 +13,10 @@
 | ComfyUI-Flow | 6 | ✅ | 不需要（纯运算/文本） | 0 |
 | ComfyUI-Vision | 7 | ✅ | Florence-2 ✅ | 3（WD14 / BLIP / VLM） |
 | ComfyUI-Segment | 6 | ✅ | SAM2 ✅ / FaceCrop ✅ | 2（GroundingDINO / Matting） |
-| ComfyUI-Resolve | 1 | ✅ | 不需要（纯张量） | 0 |
-| ComfyUI-ControlNet | 1 | ✅ | cv2 确定性（建议冒烟） | 0 |
-| ComfyUI-Inpaint | 1 | ✅ | 不需要（纯几何） | 0 |
-| **合计** | **36** | **✅** | **3 模式** | **5 节点** |
+| ComfyUI-Resolve | 2 | ✅ | 不需要（纯张量 / 可 stub 测） | 1（模型放大） |
+| ComfyUI-ControlNet | 2 | ✅ | cv2 确定性（建议冒烟） | 0 |
+| ComfyUI-Inpaint | 2 | ✅ | 不需要（纯几何） | 0 |
+| **合计** | **39** | **✅** | **3 模式** | **6 节点** |
 
 ## L3 明细（需要模型的节点）
 
@@ -30,8 +30,9 @@
 | `comfyui_vision_vlm_caption` | `Qwen/Qwen2.5-VL-3B-Instruct` | ~7 GB | 非空描述 | ⏳ 待做 |
 | `comfyui_segment_grounding_dino` | `IDEA-Research/grounding-dino-tiny` | ~0.7 GB | boxes + 非空 MASK | ⏳ 待做 |
 | `comfyui_segment_matting` | rembg `birefnet-general`（或 `u2net`） | ~0.9 GB (u2net ~0.18) | alpha MASK + RGBA | ⏳ 待做 |
+| `comfyui_resolve_upscale_tiled` | 超分模型（如 4x-UltraSharp / RealESRGAN_x4plus） | ~0.07 GB | 4x 尺寸、无接缝 | ⏳ 待做 |
 
-**L3 模型下载总预算：约 9.9 GB**（可用 `u2net` 把抠图降到 ~0.18 GB，总计约 9.2 GB）。
+**L3 模型下载总预算：约 10 GB**（可用 `u2net` 把抠图降到 ~0.18 GB，总计约 9.3 GB）。
 
 ## 全节点清单
 
@@ -71,8 +72,11 @@
 | `comfyui_segment_matting` | segment | ✅ | ⏳ | 见上 |
 | `comfyui_segment_face_crop` | segment | ✅ | ✅ | 见上 |
 | `comfyui_resolve_scale_to_megapixels` | resolve | ✅ | N/A | 纯张量 |
+| `comfyui_resolve_upscale_tiled` | resolve | ✅ | ⏳ | 见上（stub 已测） |
 | `comfyui_controlnet_canny` | controlnet | ✅ | 建议一次 | cv2，确定性 |
+| `comfyui_controlnet_lineart` | controlnet | ✅ | 建议一次 | cv2，确定性（非神经近似） |
 | `comfyui_inpaint_crop_by_mask` | inpaint | ✅ | N/A | 纯几何 |
+| `comfyui_inpaint_stitch` | inpaint | ✅ | N/A | 纯几何 |
 
 ## 收官执行清单（L3）
 

@@ -3,8 +3,8 @@
 import json
 import os
 
-import numpy as np
 import folder_paths
+import numpy as np
 from PIL import Image
 from PIL.PngImagePlugin import PngInfo
 

@@ -7,10 +7,9 @@ from the ONNX session so they stay testable without a model file.
 import csv
 import os
 
+import folder_paths
 import numpy as np
 from PIL import Image
-
-import folder_paths
 
 GENERAL_CATEGORY = 0
 CHARACTER_CATEGORY = 4

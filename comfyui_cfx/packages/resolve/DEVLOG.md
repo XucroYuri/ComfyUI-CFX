@@ -12,6 +12,7 @@
 | 节点/模块 | SPEC | 实现 | 审查 | 验收 | 状态 |
 |---|---|---|---|---|---|
 | `comfyui_resolve_scale_to_megapixels` | specs/comfyui_resolve_scale_to_megapixels.md | nodes/scale.py | specs/comfyui_resolve_scale_to_megapixels.review.md | tests/test_resolve_scale.py | VERIFY |
+| `comfyui_resolve_upscale_tiled` | specs/comfyui_resolve_upscale_tiled.md | nodes/upscale.py | specs/comfyui_resolve_upscale_tiled.review.md | tests/test_resolve_upscale.py | VERIFY |
 
 ## 3. 里程碑
 - M1 — 总像素缩放节点全链路 | 状态：VERIFY
@@ -22,6 +23,9 @@
 - 2026-09-24 | Implementer | 实现并注册总像素缩放节点 | nodes/scale.py, nodes/__init__.py | IMPL
 - 2026-09-24 | Adversary | 对抗性审查（反例与许可） | specs/comfyui_resolve_scale_to_megapixels.review.md | REVIEW
 - 2026-09-24 | Verifier | 运行单测/spec_lint/license_gate | tests/test_resolve_scale.py | VERIFY
+- 2026-09-24 | Spec-Writer | 编写分块放大合约与对抗审查 | specs/comfyui_resolve_upscale_tiled.md, specs/comfyui_resolve_upscale_tiled.review.md | REVIEW
+- 2026-09-24 | Implementer | 实现并注册分块放大节点 | nodes/upscale.py, nodes/__init__.py | IMPL
+- 2026-09-24 | Verifier | 运行单测/spec_lint/license_gate | tests/test_resolve_upscale.py | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |

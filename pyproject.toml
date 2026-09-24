@@ -12,6 +12,12 @@ target-version = "py310"
 [tool.ruff.lint]
 select = ["E", "F", "I", "W"]
 
+[tool.ruff.lint.per-file-ignores]
+# Tests import after ``pytest.importorskip`` and verification scripts import after
+# ``bootstrap()``; both are intentional module-level import orders.
+"tests/*" = ["E402"]
+"tools/verify/*" = ["E402"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"

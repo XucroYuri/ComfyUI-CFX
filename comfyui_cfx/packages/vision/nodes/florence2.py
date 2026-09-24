@@ -2,8 +2,8 @@
 
 import os
 
-import folder_paths
 import comfy.model_management as mm
+import folder_paths
 
 from ....core.device import resolve_dtype
 from ....core.types import ensure_image

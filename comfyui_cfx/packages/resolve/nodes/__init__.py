@@ -1,11 +1,11 @@
 """Resolve node registry."""
 
-from . import scale
+from . import scale, upscale
 
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
-for _module in (scale,):
+for _module in (scale, upscale):
     _duplicates = NODE_CLASS_MAPPINGS.keys() & _module.NODE_CLASS_MAPPINGS.keys()
     if _duplicates:
         raise RuntimeError(f"duplicate node ids in resolve: {sorted(_duplicates)}")
