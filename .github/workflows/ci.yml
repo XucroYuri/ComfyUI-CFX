@@ -43,7 +43,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: pip install --index-url https://download.pytorch.org/whl/cpu torch numpy pillow pytest
+      - run: pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install numpy pillow pytest
       - run: pytest
 
   test-full:
@@ -59,8 +60,8 @@ jobs:
       - name: Install ComfyUI (CPU) for the test environment
         run: |
           git clone --depth 1 https://github.com/comfyanonymous/ComfyUI /tmp/ComfyUI
-          pip install --index-url https://download.pytorch.org/whl/cpu torch torchvision torchaudio
-          pip install -r /tmp/ComfyUI/requirements.txt
+          pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+          pip install -r /tmp/ComfyUI/requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
           pip install pytest
       - run: pytest
         env:
