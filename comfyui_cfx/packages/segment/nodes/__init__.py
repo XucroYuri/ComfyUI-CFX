@@ -1,11 +1,11 @@
 """Segment node registry."""
 
-from . import annotations, detect, face, matting, sam2
+from . import annotations, detect, face, mask_to_bbox, matting, sam2, sam2_points, text_to_mask
 
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
-for _module in (annotations, detect, sam2, matting, face):
+for _module in (annotations, detect, sam2, sam2_points, text_to_mask, mask_to_bbox, matting, face):
     _duplicates = NODE_CLASS_MAPPINGS.keys() & _module.NODE_CLASS_MAPPINGS.keys()
     if _duplicates:
         raise RuntimeError(f"duplicate node ids in segment: {sorted(_duplicates)}")

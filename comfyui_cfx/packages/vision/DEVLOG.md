@@ -20,6 +20,8 @@
 | `comfyui_vision_wd14_tagger` | specs/….md | nodes/wd14.py（+ wd14.py） | ….review.md | tests/test_vision_wd14.py | DONE（真实推理通过，修复 3 处 bug） |
 | `comfyui_vision_blip_caption` | specs/….md | nodes/blip.py | ….review.md | tests/test_vision_blip.py | VERIFY（推理人工） |
 | `comfyui_vision_vlm_caption` | specs/….md | nodes/vlm.py（+ vlm.py） | ….review.md | tests/test_vision_vlm.py | DONE（真实推理通过，修复 1 处 bug） |
+| `comfyui_vision_clip_interrogator` | specs/….md | nodes/clip_interrogator.py | ….review.md | tests/test_vision_clip_interrogator.py | DONE（真实推理通过：CLIP ViT-L-14 + BLIP） |
+| `comfyui_vision_clip_interrogator` | specs/….md | nodes/clip_interrogator.py | ….review.md | tests/test_vision_clip_interrogator.py | VERIFY |
 | 迁移旧节点 | — | tools/migrate.py | — | tests/test_migrate.py | VERIFY |
 
 ## 3. 里程碑
@@ -45,6 +47,9 @@
 - 2026-09-24 | Verifier | VLM `load()` 相对导入层级错误（`....core.device` 越界）→ 改为 `...core.device`；导入解析已确认 | vlm.py | FIXED
 - 2026-09-24 | Verifier | VLM 真实推理仍待做（需 ~7GB 权重） | tools/verify/vlm.py | PENDING
 - 2026-09-24 | Verifier | VLM 首次下载遇网络中断（`peer closed connection`），HF 断点续传后真实推理通过：输出非空英文描述 | tools/verify/vlm.py | DONE
+- 2026-09-24 | Implementer | 新增 `clip_interrogator` 节点（CLIP + BLIP，惰性加载 + 按模型缓存） | nodes/clip_interrogator.py | IMPL
+- 2026-09-24 | Verifier | CLIP Interrogator 真实推理通过（首次加载 90s）：输出非空英文描述 | tools/verify/vision_clip_interrogator.py | DONE
+- 2026-09-24 | Spec-Writer/Implementer/Adversary | clip_interrogator（延迟导入 + `MODE_METHODS` 分派）全链路 PASS | nodes/clip_interrogator.py, specs/*.md | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |

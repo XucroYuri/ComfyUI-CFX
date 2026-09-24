@@ -14,10 +14,13 @@
 | `comfyui_segment_annotations_to_mask` | specs/….md | nodes/annotations.py（+ geometry.py） | ….review.md | tests/test_segment_{geometry,annotations}.py | VERIFY |
 | `comfyui_segment_grounding_dino` | specs/….md | nodes/detect.py | ….review.md | tests/test_segment_detect.py | DONE（真实推理通过，修复 2 处 bug） |
 | `registry.py`（家族/布局/缓存键） | — | registry.py | — | tests/test_segment_geometry.py | VERIFY |
-| `comfyui_segment_sam2_loader` | specs/….md | nodes/sam2.py（+ backend.py） | ….review.md | tests/test_segment_sam2.py | VERIFY（推理人工） |
-| `comfyui_segment_sam2_mask` | specs/….md | nodes/sam2.py | ….review.md | tests/test_segment_sam2.py | VERIFY（推理人工） |
+| `comfyui_segment_sam2_loader` | specs/….md | nodes/sam2.py（+ backend.py） | ….review.md | tests/test_segment_sam2.py | DONE（真实推理通过） |
+| `comfyui_segment_sam2_mask` | specs/….md | nodes/sam2.py | ….review.md | tests/test_segment_sam2.py | DONE（真实推理通过：覆盖 6.3%） |
+| `comfyui_segment_sam2_points` | specs/….md | nodes/sam2_points.py | ….review.md | tests/test_segment_sam2_points.py | DONE（真实推理通过：覆盖 9.4%） |
 | `comfyui_segment_matting` | specs/….md | nodes/matting.py | ….review.md | tests/test_segment_matting.py | DONE（真实推理通过，修复 1 处 bug） |
-| `comfyui_segment_face_crop` | specs/….md | nodes/face.py（+ face_backend.py） | ….review.md | tests/test_segment_face.py | VERIFY（推理人工） |
+| `comfyui_segment_face_crop` | specs/….md | nodes/face.py（+ face_backend.py） | ….review.md | tests/test_segment_face.py | DONE（真实推理通过） |
+| `comfyui_segment_text_to_mask` | specs/….md | nodes/text_to_mask.py | ….review.md | tests/test_segment_text_to_mask.py | DONE（真实推理通过：3 框 + MASK 覆盖 0.299） |
+| `comfyui_segment_mask_to_bbox` | specs/….md | nodes/mask_to_bbox.py（+ geometry.py） | ….review.md | tests/test_segment_mask_to_bbox.py | DONE（纯几何） |
 
 ## 3. 里程碑
 - M1 — 标注→掩码几何层 + GroundingDINO 文本检测 | 状态：DONE
@@ -43,6 +46,13 @@
 - 2026-09-24 | Verifier | Matting 真实推理**失败**：ndarray 上调 `.clamp` | tools/verify/matting.py | REJECTED
 - 2026-09-24 | Implementer | 修复 Matting：tensor 上 clamp 再转 numpy | nodes/matting.py | FIXED
 - 2026-09-24 | Verifier | Matting 真实推理通过：MASK (1,768,768) 覆盖 0.289 + RGBA (1,768,768,4) | tools/verify/matting.py | DONE
+- 2026-09-24 | Implementer | 新增 sam2_points / text_to_mask / mask_to_bbox；后端增 `segment_points` | nodes/*.py, backend.py | IMPL
+- 2026-09-24 | Verifier | sam2_points 真实推理通过（覆盖 0.094）；text_to_mask 真实推理通过（3 框，覆盖 0.299） | tools/verify/{sam2_points,text_to_mask}.py | DONE
+- 2026-09-24 | Spec-Writer/Implementer/Adversary | 新增 SAM2 点提示分割：`parse_points` 归一两种形状，正/负点 JSON 透传后端 | nodes/sam2_points.py, specs/comfyui_segment_sam2_points*.md | VERIFY
+- 2026-09-24 | Spec-Writer/Implementer/Adversary | 新增 text_to_mask：GroundingDINO→SAM2 组合链（无框/无 sam2 走几何回退）并通过审查 | nodes/text_to_mask.py, specs/*.md | VERIFY
+- 2026-09-24 | Verifier | text_to_mask 离线单测通过（SAM2 路径/几何回退/空框全 0/detections 透传） | tests/test_segment_text_to_mask.py | VERIFY
+- 2026-09-24 | Spec-Writer/Implementer/Adversary | 新增 `mask_to_bbox`（`annotations_to_mask` 逆）：纯几何 `mask_to_bboxes` + 节点 + spec/review PASS | geometry.py, nodes/mask_to_bbox.py, specs/*.md | REVIEW
+- 2026-09-24 | Verifier | mask→bbox 单测通过（矩形/向外对齐/夹取/空项/2D/阈值/多批） | tests/test_segment_mask_to_bbox.py | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |

@@ -12,9 +12,9 @@ append-only development record (`DEVLOG.md`).
 | Metric | Value |
 |---|---|
 | Packages | 14 |
-| Nodes | 56 |
-| Unit tests | 347 passing |
-| Real end-to-end verified | 9 nodes (models: Florence-2, WD14, BLIP, Qwen2.5-VL, GroundingDINO, rembg, SAM2, RetinaFace, RealESRGAN) |
+| Nodes | 60 |
+| Unit tests | 374 passing |
+| Real end-to-end verified | 12 nodes (models: Florence-2, WD14, BLIP, Qwen2.5-VL, CLIP-Interrogator, GroundingDINO, rembg, SAM2 框/点, RetinaFace, RealESRGAN) |
 | License | MIT (`packages/**` enforced MIT by `tools/license_gate.py`) |
 
 See `docs/verification-matrix.md` for the node-by-node verification ledger.
@@ -25,8 +25,8 @@ See `docs/verification-matrix.md` for the node-by-node verification ledger.
 |---|---|---|
 | `ComfyUI-Primitives` | 14 | text / number / logic / image / mask / resolution / seed / save |
 | `ComfyUI-Flow` | 6 | string function, show text, constrain image, repeater, load/save text |
-| `ComfyUI-Vision` | 7 | Florence-2 load/run, WD14 tagger, BLIP, Qwen2.5/3-VL, caption clean, tags filter |
-| `ComfyUI-Segment` | 6 | annotations→mask, GroundingDINO, SAM2 load/mask, matting, face crop |
+| `ComfyUI-Vision` | 8 | Florence-2 load/run, WD14 tagger, BLIP, Qwen2.5/3-VL, CLIP interrogator, caption clean, tags filter |
+| `ComfyUI-Segment` | 9 | annotations→mask, mask→bbox, GroundingDINO, text→mask, SAM2 load/mask/points, matting, face crop |
 | `ComfyUI-Inpaint` | 4 | crop-by-mask, stitch, outpaint canvas, outpaint to ratio |
 | `ComfyUI-ControlNet` | 3 | canny, lineart, normal-from-depth |
 | `ComfyUI-Resolve` | 2 | scale to megapixels, tiled model upscale |

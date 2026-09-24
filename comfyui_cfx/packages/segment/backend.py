@@ -53,3 +53,13 @@ def segment(sam2_model: dict, image, bboxes=None, keep_model_loaded: bool = Fals
     return _nodes().Sam2Segmentation().segment(
         image=image, sam2_model=sam2_model, keep_model_loaded=keep_model_loaded, bboxes=bboxes
     )
+
+
+def segment_points(sam2_model: dict, image, positive: str, negative=None, keep_model_loaded: bool = False):
+    return _nodes().Sam2Segmentation().segment(
+        image=image,
+        sam2_model=sam2_model,
+        keep_model_loaded=keep_model_loaded,
+        coordinates_positive=positive,
+        coordinates_negative=negative,
+    )

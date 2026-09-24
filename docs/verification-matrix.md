@@ -11,8 +11,8 @@
 |---|---|---|---|---|
 | ComfyUI-Primitives | 14 | ✅ | 不需要（纯运算） | 0 |
 | ComfyUI-Flow | 6 | ✅ | 不需要（纯运算/文本） | 0 |
-| ComfyUI-Vision | 7 | ✅ | Florence-2 ✅ / WD14 ✅ / BLIP ✅ / VLM ✅ | 0 |
-| ComfyUI-Segment | 6 | ✅ | SAM2 ✅ / FaceCrop ✅ / GDINO ✅ / Matting ✅ | 0 |
+| ComfyUI-Vision | 8 | ✅ | Florence-2 ✅ / WD14 ✅ / BLIP ✅ / VLM ✅ / CLIP-Interrogator ✅ | 0 |
+| ComfyUI-Segment | 9 | ✅ | SAM2(框/点) ✅ / FaceCrop ✅ / GDINO ✅ / Matting ✅ / Text→Mask ✅ | 0 |
 | ComfyUI-Resolve | 2 | ✅ | 模型放大 ✅ | 0 |
 | ComfyUI-ControlNet | 3 | ✅ | cv2 确定性（建议冒烟） | 0 |
 | ComfyUI-Inpaint | 4 | ✅ | 不需要（纯几何） | 0 |
@@ -23,7 +23,7 @@
 | ComfyUI-Audio | 2 | ✅ | 不需要（纯张量） | 0 |
 | ComfyUI-Loaders | 2 | ✅ | 不需要（读文件头/元数据） | 0 |
 | ComfyUI-Filter | 2 | ✅ | 不需要（纯张量） | 0 |
-| **合计** | **56** | **✅** | **9 项已真实运行** | **0** |
+| **合计** | **60** | **✅** | **12 项已真实运行** | **0** |
 
 ## L3 明细（需要模型的节点）
 
@@ -37,6 +37,9 @@
 | `comfyui_vision_vlm_caption` | `Qwen/Qwen2.5-VL-3B-Instruct` | 已下载 ~8.8 GB | 非空描述 | ✅ 已通过（修复 1 处 bug；首次下载遇网络中断，续传成功） |
 | `comfyui_segment_grounding_dino` | `IDEA-Research/grounding-dino-tiny` | 已下载 ~0.66 GB | boxes + MASK | ✅ 已通过（修复 2 处 bug，含 transformers 5 `threshold` 改名） |
 | `comfyui_segment_matting` | rembg `u2net` | 已下载 ~0.18 GB | alpha MASK + RGBA | ✅ 已通过（修复 1 处 bug） |
+| `comfyui_segment_sam2_points` | SAM2 点位提示（复用已有 checkpoint） | 0（已有） | MASK `(1,H,W)`、非空 | ✅ 已通过 |
+| `comfyui_segment_text_to_mask` | GroundingDINO-tiny + SAM2 | 0（已有） | 检测框 + 非空 MASK | ✅ 已通过（3 框，覆盖 0.299）|
+| `comfyui_vision_clip_interrogator` | CLIP `ViT-L-14/openai` + BLIP | 已下载 ~2 GB | 非空英文描述 | ✅ 已通过 |
 | `comfyui_resolve_upscale_tiled` | 超分模型（已装 `RealESRGAN_x4plus.pth`） | 0.06 GB（已有） | 4x 尺寸、无接缝 | ✅ 已通过（修复 1 处 bug） |
 
 **全部 L3 模型已就位**（WD14 + GDINO + u2net + BLIP + Qwen3B ≈ 9.9 GB；超分模型本机已有）；**剩余预算 0**。
@@ -112,6 +115,10 @@
 | `comfyui_loaders_safetensors_info` | loaders | ✅ | N/A | 读元数据 + 路径校验 |
 | `comfyui_flux_conditioning_concat` | flux | ✅ | N/A | 纯列表 |
 | `comfyui_depth3d_colormap` | depth3d | ✅ | N/A | 纯张量 + matplotlib |
+| `comfyui_vision_clip_interrogator` | vision | ✅ | ✅ | CLIP + BLIP |
+| `comfyui_segment_sam2_points` | segment | ✅ | ✅ | SAM2 点位 |
+| `comfyui_segment_text_to_mask` | segment | ✅ | ✅ | GDINO + SAM2 |
+| `comfyui_segment_mask_to_bbox` | segment | ✅ | N/A | 纯几何 |
 
 ## 收官执行清单（L3）
 

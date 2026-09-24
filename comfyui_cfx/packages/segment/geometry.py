@@ -53,3 +53,31 @@ def annotations_to_box_batch(annotations) -> list:
         raise ValueError("annotations must contain 'bboxes'")
     boxes = [[float(value) for value in box[:4]] for box in annotations["bboxes"]]
     return [boxes]
+
+
+def mask_to_bboxes(mask, threshold: float = 0.5, multiple_of: int = 1) -> list:
+    """Invert :func:`boxes_to_mask`: bbox of pixels ``> threshold`` per ``[B, H, W]`` item.
+
+    Boxes are ``[x0, y0, x1, y1]`` with exclusive ``x1``/``y1``, grown OUTWARD to
+    ``multiple_of`` and clamped to the image. An empty item contributes no entry.
+    """
+    array = np.asarray(mask, dtype=np.float32)
+    if array.ndim != 3:
+        raise ValueError(f"mask must be [B,H,W], got shape {array.shape}")
+    step = max(1, int(multiple_of))
+    boxes = []
+    for item in array:
+        height, width = item.shape
+        ys, xs = np.nonzero(item > threshold)
+        if xs.size == 0:
+            continue
+        x0 = (int(xs.min()) // step) * step
+        y0 = (int(ys.min()) // step) * step
+        x1 = -(-(int(xs.max()) + 1) // step) * step
+        y1 = -(-(int(ys.max()) + 1) // step) * step
+        x0 = max(0, min(x0, width))
+        y0 = max(0, min(y0, height))
+        x1 = max(0, min(x1, width))
+        y1 = max(0, min(y1, height))
+        boxes.append({"bbox": [x0, y0, x1, y1], "area": (x1 - x0) * (y1 - y0)})
+    return boxes
