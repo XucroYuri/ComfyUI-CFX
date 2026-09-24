@@ -19,7 +19,7 @@
 | `backend.py`（Florence-2 后端适配） | — | backend.py | — | tests/test_vision_florence2.py | VERIFY |
 | `comfyui_vision_wd14_tagger` | specs/….md | nodes/wd14.py（+ wd14.py） | ….review.md | tests/test_vision_wd14.py | DONE（真实推理通过，修复 3 处 bug） |
 | `comfyui_vision_blip_caption` | specs/….md | nodes/blip.py | ….review.md | tests/test_vision_blip.py | VERIFY（推理人工） |
-| `comfyui_vision_vlm_caption` | specs/….md | nodes/vlm.py（+ vlm.py） | ….review.md | tests/test_vision_vlm.py | VERIFY（推理人工） |
+| `comfyui_vision_vlm_caption` | specs/….md | nodes/vlm.py（+ vlm.py） | ….review.md | tests/test_vision_vlm.py | DONE（真实推理通过，修复 1 处 bug） |
 | 迁移旧节点 | — | tools/migrate.py | — | tests/test_migrate.py | VERIFY |
 
 ## 3. 里程碑
@@ -44,6 +44,7 @@
 - 2026-09-24 | Verifier | BLIP 真实推理通过：`a cartoon character in a pink dress` | tools/verify/blip.py | DONE
 - 2026-09-24 | Verifier | VLM `load()` 相对导入层级错误（`....core.device` 越界）→ 改为 `...core.device`；导入解析已确认 | vlm.py | FIXED
 - 2026-09-24 | Verifier | VLM 真实推理仍待做（需 ~7GB 权重） | tools/verify/vlm.py | PENDING
+- 2026-09-24 | Verifier | VLM 首次下载遇网络中断（`peer closed connection`），HF 断点续传后真实推理通过：输出非空英文描述 | tools/verify/vlm.py | DONE
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |

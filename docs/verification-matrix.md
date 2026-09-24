@@ -11,7 +11,7 @@
 |---|---|---|---|---|
 | ComfyUI-Primitives | 14 | ✅ | 不需要（纯运算） | 0 |
 | ComfyUI-Flow | 6 | ✅ | 不需要（纯运算/文本） | 0 |
-| ComfyUI-Vision | 7 | ✅ | Florence-2 ✅ / WD14 ✅ / BLIP ✅ | 1（VLM） |
+| ComfyUI-Vision | 7 | ✅ | Florence-2 ✅ / WD14 ✅ / BLIP ✅ / VLM ✅ | 0 |
 | ComfyUI-Segment | 6 | ✅ | SAM2 ✅ / FaceCrop ✅ / GDINO ✅ / Matting ✅ | 0 |
 | ComfyUI-Resolve | 2 | ✅ | 模型放大 ✅ | 0 |
 | ComfyUI-ControlNet | 2 | ✅ | cv2 确定性（建议冒烟） | 0 |
@@ -20,7 +20,7 @@
 | ComfyUI-Sampling | 1 | ✅ | 不需要（纯张量） | 0 |
 | ComfyUI-Video | 1 | ✅ | 不需要（纯张量） | 0 |
 | ComfyUI-Flux | 1 | ✅ | 不需要（纯张量） | 0 |
-| **合计** | **44** | **✅** | **8 项已真实运行** | **1 节点（VLM）** |
+| **合计** | **44** | **✅** | **9 项已真实运行** | **0** |
 
 ## L3 明细（需要模型的节点）
 
@@ -31,12 +31,12 @@
 | `comfyui_segment_face_crop` | ComfyUI-AutoCropFaces（权重随插件 1.7MB） | 0 | 无人脸返回原图；有脸返回裁剪 | ✅ 已通过 |
 | `comfyui_vision_wd14_tagger` | SmilingWolf `wd-v1-4-moat-tagger-v2` | 已下载 ~0.31 GB | 非空标签串、含 general 标签 | ✅ 已通过（修复 3 处 bug） |
 | `comfyui_vision_blip_caption` | `Salesforce/blip-image-captioning-base` | 已下载 ~1 GB | 非空英文描述 | ✅ 已通过（修复 1 处 bug） |
-| `comfyui_vision_vlm_caption` | `Qwen/Qwen2.5-VL-3B-Instruct` | ~7 GB | 非空描述 | ⏳ 待做（相对导入已修复） |
+| `comfyui_vision_vlm_caption` | `Qwen/Qwen2.5-VL-3B-Instruct` | 已下载 ~8.8 GB | 非空描述 | ✅ 已通过（修复 1 处 bug；首次下载遇网络中断，续传成功） |
 | `comfyui_segment_grounding_dino` | `IDEA-Research/grounding-dino-tiny` | 已下载 ~0.66 GB | boxes + MASK | ✅ 已通过（修复 2 处 bug，含 transformers 5 `threshold` 改名） |
 | `comfyui_segment_matting` | rembg `u2net` | 已下载 ~0.18 GB | alpha MASK + RGBA | ✅ 已通过（修复 1 处 bug） |
 | `comfyui_resolve_upscale_tiled` | 超分模型（已装 `RealESRGAN_x4plus.pth`） | 0.06 GB（已有） | 4x 尺寸、无接缝 | ✅ 已通过（修复 1 处 bug） |
 
-**已下载 ~2.1 GB**（WD14 + GDINO + u2net + BLIP；超分模型本机已有）；**剩余预算约 7 GB**（仅 VLM）。
+**全部 L3 模型已就位**（WD14 + GDINO + u2net + BLIP + Qwen3B ≈ 9.9 GB；超分模型本机已有）；**剩余预算 0**。
 
 ## 全节点清单
 
@@ -66,7 +66,7 @@
 | `comfyui_vision_florence2_run` | vision | ✅ | ✅ | 见上 |
 | `comfyui_vision_wd14_tagger` | vision | ✅ | ✅ | 见上（修复 3 处 bug） |
 | `comfyui_vision_blip_caption` | vision | ✅ | ✅ | 见上（修复 1 处 bug） |
-| `comfyui_vision_vlm_caption` | vision | ✅ | ⏳ | 见上 |
+| `comfyui_vision_vlm_caption` | vision | ✅ | ✅ | 见上（修复 1 处 bug） |
 | `comfyui_vision_caption_clean` | vision | ✅ | N/A | 纯文本 |
 | `comfyui_vision_tags_filter` | vision | ✅ | N/A | 纯文本 |
 | `comfyui_segment_annotations_to_mask` | segment | ✅ | N/A | 纯几何 |
