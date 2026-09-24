@@ -16,6 +16,7 @@ MIT。
 | `device.py` | compute/offload 设备与 dtype 解析 |
 | `memory.py` | 统一的模型释放序列 |
 | `paths.py` | 路径归属校验（路径安全） |
+| `images.py` | IMAGE↔PIL 转换（模型节点共用，杜绝 `.clamp` on ndarray 一类重复缺陷） |
 | `logging.py` | 一次性告警 |
 | `anytype.py` | 任意类型 socket 助手 |
 

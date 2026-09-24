@@ -15,6 +15,7 @@
 | `types.py` | specs/types.md（待补） | core/types.py | — | IMPL |
 | `device.py` | specs/device.md（待补） | core/device.py | — | IMPL |
 | `paths.py` | specs/paths.md（待补） | core/paths.py | — | IMPL |
+| `images.py` | — | core/images.py | — | IMPL |
 | `logging.py` | specs/logging.md（待补） | core/logging.py | — | IMPL |
 | `anytype.py` | — | core/anytype.py | — | IMPL |
 
@@ -25,6 +26,7 @@
 - 2026-09-23 | Architect | 冻结 ADR-0001/0002 | core/docs/adr | DONE
 - 2026-09-23 | Implementer | 实现 types/device/paths/logging | core/*.py | IMPL
 - 2026-09-23 | Implementer | 新增 anytype.py；移除未被调用的 memory.py（无死代码） | core/ | DONE
+- 2026-09-24 | Implementer | 新增 images.py（`first_image_to_pil`），消除 5 处 clamp-on-ndarray 重复缺陷 | core/images.py | DONE
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |

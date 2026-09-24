@@ -35,6 +35,7 @@
 - 2026-09-24 | Verifier | SAM2 真实推理端到端通过：加载 sam2.1_hiera_tiny(fp16) → 框提示 → MASK (1,768,768)、二值、覆盖 6.3% | verify_segment_sam2 | DONE
 - 2026-09-24 | Spec-Writer/Implementer/Adversary | M3：matting（rembg MIT）+ face_crop（AutoCropFaces MIT 复用）全链路 PASS | nodes/*.py, specs/*.md | DONE
 - 2026-09-24 | Verifier | 抠图 alpha 纯函数与 FaceCrop 后端/接口单测通过 | tests/test_segment_{matting,face}.py | VERIFY
+- 2026-09-24 | Implementer | GDINO/Matting 改用 `core.images.first_image_to_pil` 修复 clamp-on-ndarray | nodes/*.py | FIXED
 - 2026-09-24 | Verifier | FaceCrop 真实推理通过（example/kaffi/bridge 均无异常）；实测澄清「无人脸返回原图」并修正 SPEC | verify_segment_face | DONE
 - 2026-09-24 | Verifier | GDINO 真实推理**失败**：ndarray 上调 `.clamp`；transformers 5 将 `box_threshold` 改名为 `threshold` | tools/verify/grounding_dino.py | REJECTED
 - 2026-09-24 | Implementer | 修复 GDINO：tensor 上 clamp；`threshold=box_threshold`；标签优先读 `text_labels` | nodes/detect.py | FIXED

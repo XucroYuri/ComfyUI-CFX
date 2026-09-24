@@ -1,10 +1,9 @@
 """Text-conditioned object detection with GroundingDINO (native transformers)."""
 
 import torch
-from PIL import Image
 
 from ....core.device import compute_device
-from ....core.types import ensure_image
+from ....core.images import first_image_to_pil
 from ..geometry import boxes_to_mask
 
 DETECT_MODELS = (
@@ -49,8 +48,7 @@ class CFXGroundingDinoDetect:
         processor, network = _load(model)
         device = network.device
 
-        first = ensure_image(image)[0].clamp(0, 1).cpu().numpy()
-        pil = Image.fromarray((first * 255.0).round().astype("uint8"))
+        pil = first_image_to_pil(image)
 
         inputs = processor(images=pil, text=prompt, return_tensors="pt").to(device)
         with torch.no_grad():

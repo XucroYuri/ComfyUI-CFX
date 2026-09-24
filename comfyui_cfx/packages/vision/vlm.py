@@ -34,7 +34,7 @@ def load(model: str, dtype):
     if key not in _CACHE:
         from transformers import AutoModelForImageTextToText, AutoProcessor
 
-        from ....core.device import compute_device
+        from ...core.device import compute_device
 
         processor = AutoProcessor.from_pretrained(model)
         network = AutoModelForImageTextToText.from_pretrained(model, dtype=dtype)

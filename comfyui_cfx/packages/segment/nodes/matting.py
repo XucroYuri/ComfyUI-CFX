@@ -2,9 +2,8 @@
 
 import numpy as np
 import torch
-from PIL import Image
 
-from ....core.types import ensure_image
+from ....core.images import first_image_to_pil
 
 MATTING_MODELS = (
     "birefnet-general",
@@ -56,8 +55,7 @@ class CFXMatting:
         from rembg import remove
 
         session = get_session(model)
-        first = ensure_image(image)[0].clamp(0, 1).cpu().numpy()
-        pil = Image.fromarray((first * 255.0).round().astype("uint8"))
+        pil = first_image_to_pil(image)
 
         cutout = np.asarray(remove(pil, session=session))
         mask = alpha_to_mask(cutout)

@@ -39,6 +39,11 @@
 - 2026-09-24 | Verifier | WD14 真实推理**失败**：CSV 先于下载、ndarray 上调 `.clamp`、输入尺寸取成通道维 3 | tools/verify/wd14.py | REJECTED
 - 2026-09-24 | Implementer | 修复 WD14 三处：先 `download_model` → 读 CSV；tensor 上 clamp 再转 numpy；空间尺寸取 `shape[1:3]` 最大值 | nodes/wd14.py, wd14.py | FIXED
 - 2026-09-24 | Verifier | WD14 真实推理通过：`solo, smile, 1girl, outstretched arms, dress, ...` | tools/verify/wd14.py | DONE
+- 2026-09-24 | Verifier | BLIP 真实推理**失败**：ndarray 上调 `.clamp()`（与 WD14 同源复制粘贴缺陷） | tools/verify/blip.py | REJECTED
+- 2026-09-24 | Implementer | 抽出 `core.images.first_image_to_pil`（消除 5 处重复的 clamp-on-ndarray 缺陷），wd14/blip/vlm 改用它 | core/images.py, nodes/*.py | FIXED
+- 2026-09-24 | Verifier | BLIP 真实推理通过：`a cartoon character in a pink dress` | tools/verify/blip.py | DONE
+- 2026-09-24 | Verifier | VLM `load()` 相对导入层级错误（`....core.device` 越界）→ 改为 `...core.device`；导入解析已确认 | vlm.py | FIXED
+- 2026-09-24 | Verifier | VLM 真实推理仍待做（需 ~7GB 权重） | tools/verify/vlm.py | PENDING
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |

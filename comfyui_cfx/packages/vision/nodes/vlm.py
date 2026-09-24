@@ -1,9 +1,7 @@
 """VLM caption node (Qwen2.5/3-VL via native transformers)."""
 
-from PIL import Image
-
 from ....core.device import resolve_dtype
-from ....core.types import ensure_image
+from ....core.images import first_image_to_pil
 from ..vlm import VLM_MODELS, build_messages, load
 
 
@@ -38,8 +36,7 @@ class CFXVlmCaption:
         processor, network = load(model, dtype)
         device = network.device
 
-        first = ensure_image(image)[0].cpu().numpy()
-        pil = Image.fromarray((first.clamp(0, 1).numpy() * 255.0).round().astype("uint8"))
+        pil = first_image_to_pil(image)
 
         messages = build_messages(prompt)
         text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)

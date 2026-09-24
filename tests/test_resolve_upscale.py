@@ -10,12 +10,16 @@ tile_ranges = upscale_node.tile_ranges
 
 
 class _StubUpscaler:
-    """Deterministic 2x nearest-neighbour upscale standing in for a real model."""
+    """Deterministic 2x nearest-neighbour upscale standing in for a real model.
+
+    Real ComfyUI's ``ImageUpscaleWithModel.upscale`` returns a ``NodeOutput`` whose
+    ``[0]`` yields the tensor, so the stub mirrors that one-tuple contract.
+    """
 
     def upscale(self, model, image):
         bchw = image.permute(0, 3, 1, 2)
         out = torch.nn.functional.interpolate(bchw, scale_factor=2.0, mode="nearest")
-        return out.permute(0, 2, 3, 1)
+        return (out.permute(0, 2, 3, 1),)
 
 
 @pytest.fixture

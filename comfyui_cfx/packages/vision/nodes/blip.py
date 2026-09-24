@@ -1,7 +1,7 @@
 """BLIP caption / interrogate node (native transformers, loaded lazily)."""
 
 from ....core.device import compute_device
-from ....core.types import ensure_image
+from ....core.images import first_image_to_pil
 
 BLIP_MODELS = (
     "Salesforce/blip-image-captioning-base",
@@ -47,11 +47,8 @@ class CFXBlipCaption:
     CATEGORY = "ComfyUI-Vision/Caption"
 
     def run(self, image, model, mode="caption", question="What is in the image?", max_new_tokens=64):
-        from PIL import Image
-
         processor, network, device = _load(model)
-        first = ensure_image(image)[0].cpu().numpy()
-        pil = Image.fromarray((first.clamp(0, 1).numpy() * 255.0).round().astype("uint8"))
+        pil = first_image_to_pil(image)
 
         if mode == "interrogate":
             inputs = processor(pil, question, return_tensors="pt").to(device)

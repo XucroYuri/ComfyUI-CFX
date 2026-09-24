@@ -76,7 +76,7 @@ class CFXUpscaleTiled:
 
         for y0, y1 in rows:
             for x0, x1 in cols:
-                upscaled = upscaler.upscale(upscale_model, source[y0:y1, x0:x1].unsqueeze(0))
+                upscaled = upscaler.upscale(upscale_model, source[y0:y1, x0:x1].unsqueeze(0))[0]
                 if upscaled.shape[1] == 0 or upscaled.shape[2] == 0:
                     raise ValueError("upscale model returned an empty tile")
 

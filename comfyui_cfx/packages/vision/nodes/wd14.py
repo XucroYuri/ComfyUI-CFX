@@ -1,9 +1,6 @@
 """WD14 ONNX tagger node."""
 
-import numpy as np
-from PIL import Image
-
-from ....core.types import ensure_image
+from ....core.images import first_image_to_pil
 from ..wd14 import WD14_MODELS, download_model, format_tags, get_session, load_tag_rows, prepare_image, select_tags
 
 
@@ -38,8 +35,7 @@ class CFXWD14Tagger:
         dims = [dim for dim in session.get_inputs()[0].shape[1:3] if isinstance(dim, int)]
         size = max(dims) if dims else 448
 
-        first = ensure_image(image)[0].clamp(0, 1).cpu().numpy()
-        pil = Image.fromarray((first * 255.0).round().astype(np.uint8))
+        pil = first_image_to_pil(image)
         batch = prepare_image(pil, int(size))[None, ...]
 
         probs = session.run(None, {input_name: batch})[0][0]

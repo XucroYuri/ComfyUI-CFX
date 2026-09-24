@@ -19,6 +19,9 @@
 
 ## 4. 变更日志（追加）
 - 2026-09-24 | Architect | 建立 Resolve 包与开发记录 | SPEC.md | DONE
+- 2026-09-24 | Verifier | 模型放大真实推理**失败**：`ImageUpscaleWithModel().upscale()` 返回 `NodeOutput`，节点当张量用 → `AttributeError` | tools/verify/resolve_upscale.py | REJECTED
+- 2026-09-24 | Implementer | 修复：按生态惯例 `upscale(...)[0]` 解包；测试 stub 同步为一元组契约 | nodes/upscale.py, tests/test_resolve_upscale.py | FIXED
+- 2026-09-24 | Verifier | 模型放大真实推理通过（RealESRGAN_x4plus，输出 4x、有限、非常量） | tools/verify/resolve_upscale.py | DONE
 - 2026-09-24 | Spec-Writer | 编写总像素缩放合约与对抗审查 | specs/comfyui_resolve_scale_to_megapixels.md, specs/comfyui_resolve_scale_to_megapixels.review.md | REVIEW
 - 2026-09-24 | Implementer | 实现并注册总像素缩放节点 | nodes/scale.py, nodes/__init__.py | IMPL
 - 2026-09-24 | Adversary | 对抗性审查（反例与许可） | specs/comfyui_resolve_scale_to_megapixels.review.md | REVIEW
