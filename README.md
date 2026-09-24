@@ -1,5 +1,9 @@
 # ComfyUI-CFX
 
+[![ci](https://github.com/XucroYuri/ComfyUI-CFX/actions/workflows/ci.yml/badge.svg)](https://github.com/XucroYuri/ComfyUI-CFX/actions/workflows/ci.yml)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![release](https://img.shields.io/github/v/release/XucroYuri/ComfyUI-CFX?include_prereleases)](https://github.com/XucroYuri/ComfyUI-CFX/releases)
+
 Consolidated ComfyUI custom-node suite. One monorepo, **14 domain packages**, a single type
 lattice, SPEC-driven development, MIT.
 
