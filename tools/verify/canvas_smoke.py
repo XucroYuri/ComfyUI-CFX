@@ -106,6 +106,7 @@ def main():
     print(f"primitives workflow OK (saved {name})")
 
     florence = wait_for(post_prompt(WORKFLOW_FLORENCE))
+    assert florence.get("outputs"), "florence-2 workflow produced no outputs"
     if COMFY:
         tags_file = COMFY / "output" / "text" / "cfx_tags.txt"
         assert tags_file.is_file(), f"missing {tags_file}"
