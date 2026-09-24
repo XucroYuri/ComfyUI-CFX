@@ -6,11 +6,14 @@ duplicate node ids.
 """
 
 from .packages import (
+    audio,
     controlnet,
     depth3d,
+    filter,
     flow,
     flux,
     inpaint,
+    loaders,
     primitives,
     resolve,
     sampling,
@@ -34,6 +37,9 @@ for _package in (
     sampling,
     video,
     flux,
+    audio,
+    loaders,
+    filter,
 ):
     _duplicates = NODE_CLASS_MAPPINGS.keys() & _package.NODE_CLASS_MAPPINGS.keys()
     if _duplicates:
