@@ -50,6 +50,8 @@
 - 2026-09-25 | Implementer | 深化模型类：BLIP2 / Florence-2 区域 / SAM2 自动分割 / SEGS 双向（L3 新增 3 项） | packages/* | DONE
 - 2026-09-25 | Implementer | 新增桥接节点 `comfyui_primitives_json_bbox`（检测 JSON → 4×INT） | packages/primitives | DONE
 - 2026-09-25 | Verifier | **跨节点串联验证 3 条链通过**（Vision 内部 / Segment 内部 / 跨包），并修掉 5 处集成层问题 | tools/verify/canvas_chains.py | DONE
+- 2026-09-25 | Integrator | CI 排查（Linux 复现）：修正 3 处 Windows 专属测试假设、补 `requirements.txt` 漏声明的 matplotlib/opencv/onnxruntime、CI 装上 matplotlib；**CI 全绿**（lint/gates/test-pure×3） | .github/workflows/ci.yml, tests/*, requirements.txt | DONE
+- 2026-09-25 | Integrator | 发布 **v0.1.0**（tag + GitHub Release）并加 CI/许可/Release 徽章 | https://github.com/XucroYuri/ComfyUI-CFX/releases/tag/v0.1.0 | DONE
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |
