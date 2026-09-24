@@ -38,7 +38,7 @@ def test_resolve_rejects_traversal(tmp_path, monkeypatch):
 def test_resolve_rejects_absolute(tmp_path, monkeypatch):
     monkeypatch.setenv("CFX_TEXT_DIRS", str(tmp_path))
     with pytest.raises(ValueError):
-        text_file_node.resolve("C:/Windows/system32/drivers/etc/hosts")
+        text_file_node.resolve(str(tmp_path / "outside.txt"))
 
 
 def test_missing_file_raises(tmp_path, monkeypatch):

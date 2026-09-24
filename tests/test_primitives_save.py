@@ -15,9 +15,9 @@ def test_validate_prefix_rejects_parent_segments():
         save_node.validate_prefix("../evil")
 
 
-def test_validate_prefix_rejects_absolute_path():
+def test_validate_prefix_rejects_absolute_path(tmp_path):
     with pytest.raises(ValueError):
-        save_node.validate_prefix("C:/Windows/temp")
+        save_node.validate_prefix(str(tmp_path / "out.png"))
 
 
 def test_validate_prefix_allows_subfolder():

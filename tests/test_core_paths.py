@@ -17,7 +17,7 @@ def test_safe_join_rejects_traversal(tmp_path):
 
 def test_safe_join_rejects_absolute(tmp_path):
     with pytest.raises(ValueError):
-        paths.safe_join(str(tmp_path), "C:/Windows/system32")
+        paths.safe_join(str(tmp_path), str(tmp_path / "evil.txt"))
 
 
 def test_safe_filename_rejects_separators():

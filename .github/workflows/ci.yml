@@ -1,6 +1,15 @@
 name: ci
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 4 * * 0" # weekly full suite
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   lint:
@@ -24,7 +33,7 @@ jobs:
       - run: python tools/license_gate.py
 
   test-pure:
-    # Runs without ComfyUI: pure core/tool tests pass, ComfyUI-dependent tests skip.
+    # Runs without ComfyUI: ComfyUI-dependent test modules skip themselves.
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -34,11 +43,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: pip install pytest
+      - run: pip install --index-url https://download.pytorch.org/whl/cpu torch numpy pillow pytest
       - run: pytest
 
   test-full:
-    # Installs ComfyUI (CPU) so the full node test suite runs.
+    # Full suite in a CPU ComfyUI environment. Scheduled/manual only: installing ComfyUI is
+    # heavy and network-fragile, so it must not block every push.
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
