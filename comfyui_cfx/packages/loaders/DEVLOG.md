@@ -11,10 +11,12 @@
 ## 2. 状态看板
 | 节点/模块 | SPEC | 实现 | 审查 | 验收 | 状态 |
 |---|---|---|---|---|---|
-| `comfyui_loaders_gguf_quant_info` | specs/….md | nodes/quant.py | ….review.md | tests/test_loaders_quant.py | TODO |
+| `comfyui_loaders_gguf_header` | specs/comfyui_loaders_gguf_header.md | nodes/quant.py | comfyui_loaders_gguf_header.review.md | tests/test_loaders_quant.py | VERIFY |
 
 ## 3. 里程碑
 - M1 — GGUF 量化元信息解析（纯函数） | 状态：TODO
 
 ## 4. 变更日志（追加）
 - 2026-09-24 | Architect | 建立 Loaders 包与开发记录 | SPEC.md | DONE
+- 2026-09-24 | Spec-Writer/Implementer/Adversary | gguf_header 全链路 PASS（仅读头部，路径包含校验） | nodes/quant.py, specs/comfyui_loaders_gguf_header.md | DONE
+- 2026-09-24 | Verifier | gguf_header 单测通过 | tests/test_loaders_quant.py | VERIFY

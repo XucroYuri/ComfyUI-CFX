@@ -11,10 +11,13 @@
 ## 2. 状态看板
 | 节点/模块 | SPEC | 实现 | 审查 | 验收 | 状态 |
 |---|---|---|---|---|---|
-| `comfyui_audio_trim_silence` | specs/….md | nodes/trim.py | ….review.md | tests/test_audio_trim.py | TODO |
+| `comfyui_audio_trim_silence` | specs/comfyui_audio_trim_silence.md | nodes/trim.py | specs/comfyui_audio_trim_silence.review.md | tests/test_audio_trim.py | VERIFY |
 
 ## 3. 里程碑
-- M1 — 静音裁剪（确定性） | 状态：TODO
+- M1 — 静音裁剪（确定性） | 状态：VERIFY
 
 ## 4. 变更日志（追加）
 - 2026-09-24 | Architect | 建立 Audio 包与开发记录 | SPEC.md | DONE
+- 2026-09-24 | Implementer | 实现静音裁剪节点（逐帧 RMS + 首尾响段 + pad，返回新 dict） | nodes/trim.py | IMPL
+- 2026-09-24 | Scribe | 补写契约与对抗性审查并注册节点 | specs/comfyui_audio_trim_silence.md, specs/comfyui_audio_trim_silence.review.md, nodes/__init__.py | REVIEW
+- 2026-09-24 | Verifier | pytest + spec_lint + license_gate + ruff 全绿 | tests/test_audio_trim.py | VERIFY

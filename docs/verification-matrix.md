@@ -17,10 +17,13 @@
 | ComfyUI-ControlNet | 2 | ✅ | cv2 确定性（建议冒烟） | 0 |
 | ComfyUI-Inpaint | 3 | ✅ | 不需要（纯几何） | 0 |
 | ComfyUI-Depth3D | 1 | ✅ | 不需要（纯张量） | 0 |
-| ComfyUI-Sampling | 1 | ✅ | 不需要（纯张量） | 0 |
+| ComfyUI-Sampling | 2 | ✅ | 不需要（纯张量） | 0 |
 | ComfyUI-Video | 1 | ✅ | 不需要（纯张量） | 0 |
 | ComfyUI-Flux | 1 | ✅ | 不需要（纯张量） | 0 |
-| **合计** | **44** | **✅** | **9 项已真实运行** | **0** |
+| ComfyUI-Audio | 1 | ✅ | 不需要（纯张量） | 0 |
+| ComfyUI-Loaders | 1 | ✅ | 不需要（读文件头） | 0 |
+| ComfyUI-Filter | 1 | ✅ | 不需要（纯张量） | 0 |
+| **合计** | **48** | **✅** | **9 项已真实运行** | **0** |
 
 ## L3 明细（需要模型的节点）
 
@@ -84,8 +87,12 @@
 | `comfyui_inpaint_outpaint_canvas` | inpaint | ✅ | N/A | 纯几何 |
 | `comfyui_depth3d_normalize_depth` | depth3d | ✅ | N/A | 纯张量 |
 | `comfyui_sampling_split_sigmas` | sampling | ✅ | N/A | 纯张量 |
+| `comfyui_sampling_sigma_shift` | sampling | ✅ | N/A | 纯张量 |
 | `comfyui_video_frame_range` | video | ✅ | N/A | 纯张量 |
 | `comfyui_flux_conditioning_blend` | flux | ✅ | N/A | 纯张量 |
+| `comfyui_audio_trim_silence` | audio | ✅ | N/A | 纯张量 |
+| `comfyui_loaders_gguf_header` | loaders | ✅ | N/A | 读文件头 + 路径校验 |
+| `comfyui_filter_high_pass` | filter | ✅ | N/A | 纯张量 |
 
 ## 收官执行清单（L3）
 

@@ -1,11 +1,11 @@
 """Sampling node registry."""
 
-from . import sigmas
+from . import shift, sigmas
 
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
-for _module in (sigmas,):
+for _module in (sigmas, shift):
     _duplicates = NODE_CLASS_MAPPINGS.keys() & _module.NODE_CLASS_MAPPINGS.keys()
     if _duplicates:
         raise RuntimeError(f"duplicate node ids in sampling: {sorted(_duplicates)}")
