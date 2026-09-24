@@ -55,7 +55,9 @@ Or, to keep the repo outside `custom_nodes`, create a directory junction:
 mklink /J "ComfyUI\custom_nodes\ComfyUI-CFX" "D:\path\to\ComfyUI-CFX"
 ```
 
-Runtime dependency: `rembg` (used by `ComfyUI-Segment · Matting`).
+Runtime extras (declared in `requirements.txt`): `rembg` (matting), `matplotlib` (depth
+colormap), `opencv-python` (Canny / Lineart), `onnxruntime` (WD14 tagger — install
+`onnxruntime-gpu` instead for CUDA).
 
 ### Optional backends (only if you use those nodes)
 
