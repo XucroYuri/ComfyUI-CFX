@@ -11,10 +11,12 @@
 ## 2. 状态看板
 | 节点/模块 | SPEC | 实现 | 审查 | 验收 | 状态 |
 |---|---|---|---|---|---|
-| `comfyui_video_frame_range` | specs/….md | nodes/frames.py | ….review.md | tests/test_video_frames.py | TODO |
+| `comfyui_video_frame_range` | specs/….md | nodes/frames.py | ….review.md | tests/test_video_frames.py | VERIFY |
 
 ## 3. 里程碑
-- M1 — 帧区间选择 | 状态：TODO
+- M1 — 帧区间选择 | 状态：VERIFY
 
 ## 4. 变更日志（追加）
 - 2026-09-24 | Architect | 建立 Video 包与开发记录 | SPEC.md | DONE
+- 2026-09-24 | Spec-Writer/Implementer/Adversary | frame_range 全链路 PASS | nodes/frames.py, specs/*.md | DONE
+- 2026-09-24 | Verifier | frame_range 单测通过 | tests/test_video_frames.py | VERIFY

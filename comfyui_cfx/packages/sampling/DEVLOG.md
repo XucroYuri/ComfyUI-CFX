@@ -11,10 +11,14 @@
 ## 2. 状态看板
 | 节点/模块 | SPEC | 实现 | 审查 | 验收 | 状态 |
 |---|---|---|---|---|---|
-| `comfyui_sampling_split_sigmas` | specs/….md | nodes/sigmas.py | ….review.md | tests/test_sampling_sigmas.py | TODO |
+| `comfyui_sampling_split_sigmas` | specs/….md | nodes/sigmas.py | ….review.md | tests/test_sampling_sigmas.py | VERIFY |
 
 ## 3. 里程碑
-- M1 — sigma 拆分节点 | 状态：TODO
+- M1 — sigma 拆分节点 | 状态：VERIFY
 
 ## 4. 变更日志（追加）
 - 2026-09-24 | Architect | 建立 Sampling 包与开发记录 | SPEC.md | DONE
+- 2026-09-24 | Spec-Writer | split_sigmas 契约：前/后缀切片、边界与错误行为 | specs/comfyui_sampling_split_sigmas.md | DONE
+- 2026-09-24 | Implementer | 实现 CFXSplitSigmas 并注册进 sampling 节点表 | nodes/sigmas.py, nodes/__init__.py | DONE
+- 2026-09-24 | Adversary | 对抗性审查通过 | specs/comfyui_sampling_split_sigmas.review.md | DONE
+- 2026-09-24 | Verifier | 单测覆盖切片/边界/dtype/错误路径 | tests/test_sampling_sigmas.py | VERIFY

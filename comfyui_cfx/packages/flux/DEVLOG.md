@@ -11,10 +11,13 @@
 ## 2. 状态看板
 | 节点/模块 | SPEC | 实现 | 审查 | 验收 | 状态 |
 |---|---|---|---|---|---|
-| `comfyui_flux_conditioning_blend` | specs/….md | nodes/blend.py | ….review.md | tests/test_flux_blend.py | TODO |
+| `comfyui_flux_conditioning_blend` | specs/….md | nodes/blend.py | ….review.md | tests/test_flux_blend.py | VERIFY |
 
 ## 3. 里程碑
-- M1 — conditioning 混合节点 | 状态：TODO
+- M1 — conditioning 混合节点 | 状态：VERIFY
 
 ## 4. 变更日志（追加）
 - 2026-09-24 | Architect | 建立 Flux 包与开发记录 | SPEC.md | DONE
+- 2026-09-24 | Spec-Writer | 编写 conditioning_blend SPEC 与对抗审查 | specs/comfyui_flux_conditioning_blend.md, specs/comfyui_flux_conditioning_blend.review.md | DONE
+- 2026-09-24 | Implementer | 实现 conditioning_blend 节点与注册表 | nodes/blend.py, nodes/__init__.py | DONE
+- 2026-09-24 | Verifier | conditioning_blend 单测通过 | tests/test_flux_blend.py | VERIFY
