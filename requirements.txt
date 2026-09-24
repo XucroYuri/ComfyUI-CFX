@@ -1,6 +1,10 @@
-# Runtime deps for the default-enabled packages.
-# ComfyUI already provides torch/numpy/Pillow; keep this file minimal.
-# Domain packages add extras only when they need them.
+# Runtime dependencies for the default-enabled packages.
+# ComfyUI already provides torch, torchvision, numpy, Pillow, scipy, transformers, safetensors.
 
-# ComfyUI-Segment · Matting node (MIT)
-rembg
+rembg          # ComfyUI-Segment · Matting
+matplotlib     # ComfyUI-Depth3D · Colormap
+opencv-python  # ComfyUI-ControlNet · Canny / Lineart
+onnxruntime    # ComfyUI-Vision · WD14 Tagger (install onnxruntime-gpu instead for CUDA)
+
+# Optional: ComfyUI-Vision · CLIP Interrogator
+# clip-interrogator

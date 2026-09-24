@@ -1,6 +1,11 @@
-import torch
+import pytest
 
-from comfyui_cfx.packages.depth3d.nodes import colormap as colormap_node
+pytest.importorskip("torch")
+pytest.importorskip("matplotlib")
+
+import torch  # noqa: E402
+
+from comfyui_cfx.packages.depth3d.nodes import colormap as colormap_node  # noqa: E402
 
 node = colormap_node.CFXDepthColormap()
 

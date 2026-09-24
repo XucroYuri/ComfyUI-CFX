@@ -44,7 +44,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install torch --index-url https://download.pytorch.org/whl/cpu
-      - run: pip install numpy pillow pytest
+      - run: pip install numpy pillow matplotlib pytest
       - name: Run pytest
         run: |
           set -o pipefail
