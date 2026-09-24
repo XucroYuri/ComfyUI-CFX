@@ -36,6 +36,7 @@ jobs:
     # Runs without ComfyUI: ComfyUI-dependent test modules skip themselves.
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         python-version: ["3.10", "3.11", "3.12"]
     steps:
@@ -49,11 +50,18 @@ jobs:
         run: |
           set -o pipefail
           pytest -q 2>&1 | tee pytest.log
-      - if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: pytest-pure-${{ matrix.python-version }}
-          path: pytest.log
+      - name: Report failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          {
+            echo "run_id: ${{ github.run_id }} python: ${{ matrix.python-version }}"
+            echo '```'
+            tail -80 pytest.log 2>/dev/null || echo "no pytest.log produced"
+            echo '```'
+          } > body.md
+          gh issue create --title "CI pure failure (py ${{ matrix.python-version }})" --body-file body.md
 
   test-full:
     # Full suite in a CPU ComfyUI environment. Scheduled/manual only: installing ComfyUI is
