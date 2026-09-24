@@ -41,6 +41,17 @@
 
 **全部 L3 模型已就位**（WD14 + GDINO + u2net + BLIP + Qwen3B ≈ 9.9 GB；超分模型本机已有）；**剩余预算 0**。
 
+## 画布实测（in-ComfyUI smoke）
+
+通过真实 ComfyUI 引擎提交 API 工作流（等价于在画布上连好图点运行），脚本 `tools/verify/canvas_smoke.py`：
+
+| 检查 | 结果 |
+|---|---|
+| 插件加载 | `custom_nodes\ComfyUI-CFX`（junction）0.1s 加载，无导入错误 |
+| 节点注册 | `object_info` 4119 个节点类型；抽样 9 个 cfx 节点全部存在 |
+| 工作流 A（primitives + IO） | LoadImage → Image Resize → Save Image(Metadata) + Text → Save Text 全部执行；产出 `cfx_smoke_00001_.png` 与内容精确匹配的 `cfx_smoke.txt` |
+| 工作流 B（Florence-2 链路） | LoadImage → Florence-2 Loader/Run(tags) → Tags Filter → Save Text；产出 `1girl, solo, smile, blue eyes, blonde hair, dress, ...` |
+
 ## 全节点清单
 
 | 节点 ID | 包 | L1 | L3 | 备注 |

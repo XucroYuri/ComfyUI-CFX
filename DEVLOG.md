@@ -8,17 +8,25 @@
 - 开发位置：`D:\Comfy-Desktop\ComfyUI-CFX`（稳定后再 junction 进 `custom_nodes`）。
 
 ## 2. 子仓状态总览
-| 子仓 | 优先级 | 里程碑 | 状态 |
-|---|---|---|---|
-| ComfyUI-Core | P0 | ADR-0001/0002 + 类型格 | IMPL |
-| ComfyUI-TestKit | P0 | fixtures/matrix/memory | IMPL |
-| ComfyUI-Primitives | P0 | image_resize 模板链路 | VERIFY |
-| ComfyUI-Flow | P0 | wrap rgthree | TODO |
-| ComfyUI-Vision | P0 | Loader + Florence-2 Tasks | TODO |
-| ComfyUI-Segment | P0 | Loader + Detect + Mask | TODO |
-| ComfyUI-Resolve / ControlNet / Inpaint | P1 | — | TODO |
-| ComfyUI-Depth3D / Sampling / Video / Flux | P2 | — | TODO |
-| ComfyUI-Audio / Loaders / Filter | P3 | — | TODO |
+| 子仓 | 节点 | 状态 |
+|---|---|---|
+| ComfyUI-Core | — | ADR-0001/0002 + types/paths/logging/anytype/images |
+| ComfyUI-TestKit | — | fixtures/matrix/memory + tools(spec_lint/license_gate/migrate) |
+| ComfyUI-Primitives | 14 | ✅ 完成 |
+| ComfyUI-Flow | 6 | ✅ 完成 |
+| ComfyUI-Vision | 7 | ✅ 完成（L3 通过） |
+| ComfyUI-Segment | 6 | ✅ 完成（L3 通过） |
+| ComfyUI-Inpaint | 4 | ✅ |
+| ComfyUI-ControlNet | 3 | ✅ |
+| ComfyUI-Resolve | 2 | ✅（L3 通过） |
+| ComfyUI-Depth3D | 2 | ✅ |
+| ComfyUI-Sampling | 2 | ✅ |
+| ComfyUI-Video | 2 | ✅ |
+| ComfyUI-Flux | 2 | ✅ |
+| ComfyUI-Audio | 2 | ✅ |
+| ComfyUI-Loaders | 2 | ✅ |
+| ComfyUI-Filter | 2 | ✅ |
+| **合计** | **56** | 347 单测；L3 9 项；画布实测通过 |
 
 ## 3. 决策索引（ADR）
 - ADR-0001 统一类型格 → `core/docs/adr/0001-type-lattice.md`
@@ -32,12 +40,21 @@
 - 2026-09-23 | Implementer | M2：switch/boolean/math/text 四节点完成并过审查 | packages/primitives | DONE
 - 2026-09-23 | Implementer | M3：crop/transform/stitch/mask_ops 完成 | packages/primitives | DONE
 - 2026-09-23 | Implementer | M4：batch/split/seed/resolution/save 完成，primitives 收口（14 节点） | packages/primitives | VERIFY
+- 2026-09-24 | Implementer | P1 首节点：resolve scale / controlnet canny / inpaint crop-by-mask | packages/* | DONE
+- 2026-09-24 | Implementer | P1 次节点：lineart / inpaint stitch / resolve tiled upscale | packages/* | DONE
+- 2026-09-24 | Implementer | P2 骨架 + 首节点：depth3d / sampling / video / flux | packages/* | DONE
+- 2026-09-24 | Verifier | L3 真实验证 9 项全部通过；修复 9 处节点缺陷（含 5 处 clamp-on-ndarray，抽 `core.images`） | tools/verify/*, packages/* | DONE
+- 2026-09-24 | Integrator | 建立 GitHub 远端并推送（private，main） | https://github.com/XucroYuri/ComfyUI-CFX | DONE
+- 2026-09-24 | Implementer | P3 骨架 + 首节点（audio/loaders/filter）+ 各包深化 8 节点，共 56 节点 | packages/* | DONE
+- 2026-09-24 | Integrator | 收尾：README 安装/启用文档；junction 接入 custom_nodes；**画布实测两条链路通过** | README.md, tools/verify/canvas_smoke.py | DONE
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |
 |---|---|---|---|
 | GPL/无证来源 | 许可污染 | `tools/license_gate.py` + Community 隔离 | WATCH |
+| 模型类节点依赖上游后端（florence2/SAM2/AutoCropFaces） | 上游改签名会破坏 | 后端适配器 + `CFX_*_DIR` 覆盖 | WATCH |
 
 ## 6. 下一步
-1. 完成 `core` 与 `testkit` 最小实现并跑测试；
-2. 落地首个模板节点 `comfyui_primitives_image_resize` 全链路。
+1. 继续深化模型类节点（Vision/Segment）并按需补 L3；
+2. CI 首次运行确认（ruff/spec_lint/license_gate/test-pure/test-full）；
+3. 可选：仓库转公开、加 Release（v0.1.0）。
