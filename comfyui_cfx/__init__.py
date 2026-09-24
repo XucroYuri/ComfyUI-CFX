@@ -5,12 +5,36 @@ Every domain package under ``packages/`` exposes ``NODE_CLASS_MAPPINGS`` and
 duplicate node ids.
 """
 
-from .packages import controlnet, flow, inpaint, primitives, resolve, segment, vision
+from .packages import (
+    controlnet,
+    depth3d,
+    flow,
+    flux,
+    inpaint,
+    primitives,
+    resolve,
+    sampling,
+    segment,
+    video,
+    vision,
+)
 
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
-for _package in (primitives, flow, vision, segment, resolve, controlnet, inpaint):
+for _package in (
+    primitives,
+    flow,
+    vision,
+    segment,
+    resolve,
+    controlnet,
+    inpaint,
+    depth3d,
+    sampling,
+    video,
+    flux,
+):
     _duplicates = NODE_CLASS_MAPPINGS.keys() & _package.NODE_CLASS_MAPPINGS.keys()
     if _duplicates:
         raise RuntimeError(f"duplicate node ids across packages: {sorted(_duplicates)}")
