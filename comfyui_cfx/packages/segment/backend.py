@@ -63,3 +63,31 @@ def segment_points(sam2_model: dict, image, positive: str, negative=None, keep_m
         coordinates_positive=positive,
         coordinates_negative=negative,
     )
+
+
+# ``Sam2AutoSegmentation.segment`` declares every knob positionally without defaults,
+# so the adapter supplies the upstream defaults for knobs the node does not expose.
+_AUTO_MASK_DEFAULTS = {
+    "points_per_side": 32,
+    "points_per_batch": 64,
+    "pred_iou_thresh": 0.8,
+    "stability_score_thresh": 0.95,
+    "stability_score_offset": 1.0,
+    "mask_threshold": 0.0,
+    "crop_n_layers": 0,
+    "box_nms_thresh": 0.7,
+    "crop_nms_thresh": 0.7,
+    "crop_overlap_ratio": 0.34,
+    "crop_n_points_downscale_factor": 1,
+    "min_mask_region_area": 0.0,
+    "use_m2m": False,
+}
+
+
+def auto_mask(sam2_model: dict, image, keep_model_loaded: bool = False, **kwargs):
+    return _nodes().Sam2AutoSegmentation().segment(
+        image=image,
+        sam2_model=sam2_model,
+        keep_model_loaded=keep_model_loaded,
+        **{**_AUTO_MASK_DEFAULTS, **kwargs},
+    )

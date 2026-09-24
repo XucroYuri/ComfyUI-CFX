@@ -13,6 +13,31 @@ from ..registry import FLORENCE2_MODELS, FLORENCE2_TASKS, task_token
 FLORENCE2_TYPE = "CFX_FLORENCE2"
 
 
+def run_florence2(florence2, image, prompt, parse_task, max_new_tokens=1024, num_beams=3, do_sample=False):
+    """Run one Florence-2 call with an arbitrary prompt and post-process as ``parse_task``."""
+    patcher = florence2["patcher"]
+    processor = florence2["processor"]
+    dtype = florence2["dtype"]
+    device = patcher.load_device
+    model = patcher.model
+
+    first = ensure_image(image)[0].permute(2, 0, 1).contiguous()
+    inputs = processor(text=prompt, images=first)
+    generated_ids = model.generate(
+        input_ids=inputs["input_ids"].to(device),
+        pixel_values=inputs["pixel_values"].to(dtype=dtype, device=device),
+        max_new_tokens=max_new_tokens,
+        do_sample=do_sample,
+        num_beams=num_beams,
+    )
+    generated_text = processor.batch_decode(generated_ids, skip_special_tokens=False)[0]
+    parsed = processor.post_process_generation(
+        generated_text, task=parse_task, image_size=(first.shape[2], first.shape[1])
+    )[parse_task]
+    text = parsed if isinstance(parsed, str) else ""
+    return text, parsed
+
+
 class CFXFlorence2Loader:
     """Download (if needed) and load a Florence-2 model via the shared backend."""
 
@@ -69,28 +94,7 @@ class CFXFlorence2Run:
 
     def run(self, florence2, image, task, max_new_tokens=1024, num_beams=3, do_sample=False):
         token = task_token(task)
-        patcher = florence2["patcher"]
-        processor = florence2["processor"]
-        dtype = florence2["dtype"]
-        device = patcher.load_device
-        model = patcher.model
-
-        first = ensure_image(image)[0].permute(2, 0, 1).contiguous()
-        inputs = processor(text=token, images=first)
-        generated_ids = model.generate(
-            input_ids=inputs["input_ids"].to(device),
-            pixel_values=inputs["pixel_values"].to(dtype=dtype, device=device),
-            max_new_tokens=max_new_tokens,
-            do_sample=do_sample,
-            num_beams=num_beams,
-        )
-        generated_text = processor.batch_decode(generated_ids, skip_special_tokens=False)[0]
-        parsed = processor.post_process_generation(
-            generated_text, task=token, image_size=(first.shape[2], first.shape[1])
-        )[token]
-
-        text = parsed if isinstance(parsed, str) else ""
-        return (text, parsed)
+        return run_florence2(florence2, image, token, token, max_new_tokens, num_beams, do_sample)
 
 
 NODE_CLASS_MAPPINGS = {

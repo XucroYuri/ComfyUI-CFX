@@ -37,7 +37,7 @@ def test_missing_backend_raises(monkeypatch):
 def test_loader_input_types():
     required = sam2_node.CFXSAM2Loader.INPUT_TYPES()["required"]
     assert "sam2.1_hiera_large.safetensors" in required["model"][0]
-    assert required["segmentor"][0] == ["single_image", "video"]
+    assert required["segmentor"][0] == ["single_image", "video", "automaskgenerator"]
 
 
 def test_mask_node_requires_annotations():

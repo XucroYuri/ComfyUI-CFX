@@ -12,9 +12,9 @@ append-only development record (`DEVLOG.md`).
 | Metric | Value |
 |---|---|
 | Packages | 14 |
-| Nodes | 60 |
-| Unit tests | 374 passing |
-| Real end-to-end verified | 12 nodes (models: Florence-2, WD14, BLIP, Qwen2.5-VL, CLIP-Interrogator, GroundingDINO, rembg, SAM2 框/点, RetinaFace, RealESRGAN) |
+| Nodes | 65 |
+| Unit tests | 400 passing |
+| Real end-to-end verified | 14 nodes (models: Florence-2 incl. region, WD14, BLIP, Qwen2.5-VL, CLIP-Interrogator, GroundingDINO, rembg, SAM2 框/点/自动, RetinaFace, RealESRGAN) |
 | License | MIT (`packages/**` enforced MIT by `tools/license_gate.py`) |
 
 See `docs/verification-matrix.md` for the node-by-node verification ledger.
@@ -25,8 +25,8 @@ See `docs/verification-matrix.md` for the node-by-node verification ledger.
 |---|---|---|
 | `ComfyUI-Primitives` | 14 | text / number / logic / image / mask / resolution / seed / save |
 | `ComfyUI-Flow` | 6 | string function, show text, constrain image, repeater, load/save text |
-| `ComfyUI-Vision` | 8 | Florence-2 load/run, WD14 tagger, BLIP, Qwen2.5/3-VL, CLIP interrogator, caption clean, tags filter |
-| `ComfyUI-Segment` | 9 | annotations→mask, mask→bbox, GroundingDINO, text→mask, SAM2 load/mask/points, matting, face crop |
+| `ComfyUI-Vision` | 10 | Florence-2 load/run/region, WD14 tagger, BLIP, BLIP2, Qwen2.5/3-VL, CLIP interrogator, caption clean, tags filter |
+| `ComfyUI-Segment` | 12 | annotations↔mask, mask↔bbox, GroundingDINO, text→mask, SAM2 load/mask/points/auto, SEGS compat, matting, face crop |
 | `ComfyUI-Inpaint` | 4 | crop-by-mask, stitch, outpaint canvas, outpaint to ratio |
 | `ComfyUI-ControlNet` | 3 | canny, lineart, normal-from-depth |
 | `ComfyUI-Resolve` | 2 | scale to megapixels, tiled model upscale |

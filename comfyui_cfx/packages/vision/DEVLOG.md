@@ -15,13 +15,17 @@
 | `comfyui_vision_tags_filter` | specs/….md | nodes/tags.py | ….review.md | tests/test_vision_tags_filter.py | VERIFY |
 | `comfyui_vision_florence2_loader` | specs/….md | nodes/florence2.py | ….review.md | tests/test_vision_florence2.py | VERIFY |
 | `comfyui_vision_florence2_run` | specs/….md | nodes/florence2.py | ….review.md | tests/test_vision_florence2.py | VERIFY（真实推理人工） |
+| `comfyui_vision_florence2_region` | specs/….md | nodes/florence2_region.py | ….review.md | tests/test_vision_florence2_region.py | VERIFY |
 | `registry.py`（任务/模型/缓存键） | — | registry.py | — | tests/test_vision_registry.py | VERIFY |
 | `backend.py`（Florence-2 后端适配） | — | backend.py | — | tests/test_vision_florence2.py | VERIFY |
 | `comfyui_vision_wd14_tagger` | specs/….md | nodes/wd14.py（+ wd14.py） | ….review.md | tests/test_vision_wd14.py | DONE（真实推理通过，修复 3 处 bug） |
 | `comfyui_vision_blip_caption` | specs/….md | nodes/blip.py | ….review.md | tests/test_vision_blip.py | VERIFY（推理人工） |
 | `comfyui_vision_vlm_caption` | specs/….md | nodes/vlm.py（+ vlm.py） | ….review.md | tests/test_vision_vlm.py | DONE（真实推理通过，修复 1 处 bug） |
 | `comfyui_vision_clip_interrogator` | specs/….md | nodes/clip_interrogator.py | ….review.md | tests/test_vision_clip_interrogator.py | DONE（真实推理通过：CLIP ViT-L-14 + BLIP） |
+| `comfyui_vision_florence2_region` | specs/….md | nodes/florence2_region.py | ….review.md | tests/test_vision_florence2_region.py | DONE（真实推理通过；修复 loc token 回显） |
+| `comfyui_vision_blip2_caption` | specs/….md | nodes/blip2.py | ….review.md | tests/test_vision_blip2_caption.py | VERIFY（模型清单已修正，权重下载中） |
 | `comfyui_vision_clip_interrogator` | specs/….md | nodes/clip_interrogator.py | ….review.md | tests/test_vision_clip_interrogator.py | VERIFY |
+| `comfyui_vision_blip2_caption` | specs/….md | nodes/blip2.py | ….review.md | tests/test_vision_blip2_caption.py | VERIFY |
 | 迁移旧节点 | — | tools/migrate.py | — | tests/test_migrate.py | VERIFY |
 
 ## 3. 里程碑
@@ -49,7 +53,13 @@
 - 2026-09-24 | Verifier | VLM 首次下载遇网络中断（`peer closed connection`），HF 断点续传后真实推理通过：输出非空英文描述 | tools/verify/vlm.py | DONE
 - 2026-09-24 | Implementer | 新增 `clip_interrogator` 节点（CLIP + BLIP，惰性加载 + 按模型缓存） | nodes/clip_interrogator.py | IMPL
 - 2026-09-24 | Verifier | CLIP Interrogator 真实推理通过（首次加载 90s）：输出非空英文描述 | tools/verify/vision_clip_interrogator.py | DONE
+- 2026-09-24 | Implementer | 新增 `florence2_region`（区域描述/分类/OCR）与 `blip2_caption`；抽出 `run_florence2` 供两节点复用 | nodes/florence2*.py, nodes/blip2.py | IMPL
+- 2026-09-24 | Verifier | Region 真实推理通过；发现输出回显 `<loc_N>` 并加 `strip_loc_tokens` 清理（已复验干净） | tools/verify/florence2_region.py | DONE
+- 2026-09-24 | Verifier | BLIP2 首次验证**失败**：`Salesforce/blip2-opt-350m` 仓库 404；已改为真实存在的 3 个 caption checkpoint | tools/verify/blip2.py | FIXED
+- 2026-09-24 | Verifier | BLIP2 `opt-2.7b`（~15GB）后台下载中，L3 待完成 | tools/verify/blip2.py | PENDING
 - 2026-09-24 | Spec-Writer/Implementer/Adversary | clip_interrogator（延迟导入 + `MODE_METHODS` 分派）全链路 PASS | nodes/clip_interrogator.py, specs/*.md | VERIFY
+- 2026-09-24 | Spec-Writer/Implementer/Adversary | blip2_caption（原生 transformers，按 `(model, precision)` 缓存）全链路 PASS | nodes/blip2.py, specs/*.md | VERIFY
+- 2026-09-24 | Spec-Writer/Implementer/Adversary | florence2_region（区域描述/分类/OCR + 1000 格坐标量化）全链路 PASS | nodes/florence2_region.py, specs/*.md | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |

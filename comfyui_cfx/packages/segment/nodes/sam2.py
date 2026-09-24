@@ -33,7 +33,7 @@ class CFXSAM2Loader:
         return {
             "required": {
                 "model": (list(SAM2_MODELS), {"default": SAM2_MODELS[0]}),
-                "segmentor": (["single_image", "video"], {"default": "single_image"}),
+                "segmentor": (["single_image", "video", "automaskgenerator"], {"default": "single_image"}),
                 "precision": (["fp16", "bf16", "fp32"], {"default": "fp16"}),
             },
         }

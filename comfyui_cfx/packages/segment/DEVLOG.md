@@ -21,6 +21,12 @@
 | `comfyui_segment_face_crop` | specs/….md | nodes/face.py（+ face_backend.py） | ….review.md | tests/test_segment_face.py | DONE（真实推理通过） |
 | `comfyui_segment_text_to_mask` | specs/….md | nodes/text_to_mask.py | ….review.md | tests/test_segment_text_to_mask.py | DONE（真实推理通过：3 框 + MASK 覆盖 0.299） |
 | `comfyui_segment_mask_to_bbox` | specs/….md | nodes/mask_to_bbox.py（+ geometry.py） | ….review.md | tests/test_segment_mask_to_bbox.py | DONE（纯几何） |
+| `comfyui_segment_sam2_auto_mask` | specs/….md | nodes/sam2_auto.py（+ backend.auto_mask） | ….review.md | tests/test_segment_sam2_auto.py | DONE（真实推理通过：23 个区域） |
+| `comfyui_segment_mask_to_segs` | specs/….md | nodes/segs.py | ….review.md | tests/test_segment_segs.py | DONE（SEGS 结构兼容，纯数据） |
+| `comfyui_segment_segs_to_mask` | specs/….md | nodes/segs.py | ….review.md | tests/test_segment_segs.py | DONE（SEGS 结构兼容，纯数据） |
+| `comfyui_segment_sam2_auto_mask` | specs/….md | nodes/sam2_auto.py（+ backend.auto_mask） | ….review.md | tests/test_segment_sam2_auto.py | VERIFY |
+| `comfyui_segment_mask_to_segs` | specs/….md | nodes/segs.py（+ geometry.py） | ….review.md | tests/test_segment_segs.py | VERIFY |
+| `comfyui_segment_segs_to_mask` | specs/….md | nodes/segs.py | ….review.md | tests/test_segment_segs.py | VERIFY |
 
 ## 3. 里程碑
 - M1 — 标注→掩码几何层 + GroundingDINO 文本检测 | 状态：DONE
@@ -48,11 +54,18 @@
 - 2026-09-24 | Verifier | Matting 真实推理通过：MASK (1,768,768) 覆盖 0.289 + RGBA (1,768,768,4) | tools/verify/matting.py | DONE
 - 2026-09-24 | Implementer | 新增 sam2_points / text_to_mask / mask_to_bbox；后端增 `segment_points` | nodes/*.py, backend.py | IMPL
 - 2026-09-24 | Verifier | sam2_points 真实推理通过（覆盖 0.094）；text_to_mask 真实推理通过（3 框，覆盖 0.299） | tools/verify/{sam2_points,text_to_mask}.py | DONE
+- 2026-09-24 | Implementer | 新增 `sam2_auto_mask`（上游自动分割适配）；loader 增加 `automaskgenerator` 选项 | nodes/sam2_auto.py, backend.py | IMPL
+- 2026-09-24 | Implementer | 新增 SEGS 双向兼容节点（纯数据格式，未引用/复制 GPL 的 Impact Pack 代码） | nodes/segs.py | IMPL
+- 2026-09-24 | Verifier | sam2_auto_mask 真实推理通过（points_per_side=8 → 23 个区域） | tools/verify/sam2_auto_mask.py | DONE
 - 2026-09-24 | Spec-Writer/Implementer/Adversary | 新增 SAM2 点提示分割：`parse_points` 归一两种形状，正/负点 JSON 透传后端 | nodes/sam2_points.py, specs/comfyui_segment_sam2_points*.md | VERIFY
 - 2026-09-24 | Spec-Writer/Implementer/Adversary | 新增 text_to_mask：GroundingDINO→SAM2 组合链（无框/无 sam2 走几何回退）并通过审查 | nodes/text_to_mask.py, specs/*.md | VERIFY
 - 2026-09-24 | Verifier | text_to_mask 离线单测通过（SAM2 路径/几何回退/空框全 0/detections 透传） | tests/test_segment_text_to_mask.py | VERIFY
 - 2026-09-24 | Spec-Writer/Implementer/Adversary | 新增 `mask_to_bbox`（`annotations_to_mask` 逆）：纯几何 `mask_to_bboxes` + 节点 + spec/review PASS | geometry.py, nodes/mask_to_bbox.py, specs/*.md | REVIEW
 - 2026-09-24 | Verifier | mask→bbox 单测通过（矩形/向外对齐/夹取/空项/2D/阈值/多批） | tests/test_segment_mask_to_bbox.py | VERIFY
+- 2026-09-24 | Spec-Writer/Implementer/Adversary | 新增 `sam2_auto_mask`（无提示全自动掩码，丢弃预览图只留 mask+bboxes；错误 segmentor 前置 `ValueError`）+ spec/review PASS | nodes/sam2_auto.py, backend.py, specs/*.md | REVIEW
+- 2026-09-24 | Verifier | sam2_auto_mask 离线单测通过（返回 mask+bboxes / keep_model_loaded+调节项透传 / 错误 segmentor 阻断 / 接口） | tests/test_segment_sam2_auto.py | VERIFY
+- 2026-09-24 | Spec-Writer/Implementer/Adversary | 新增 `mask_to_segs`/`segs_to_mask`（Impact SEGS 兼容垫层，不导入 GPL，纯几何）+ spec/review PASS | nodes/segs.py, specs/*.md | REVIEW
+- 2026-09-24 | Verifier | mask↔SEGS 往返/结构键与 dtype/空输入/OR 并集/尺寸覆盖/单图广播单测通过 | tests/test_segment_segs.py | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |
