@@ -23,7 +23,7 @@
 | ComfyUI-Audio | 2 | ✅ | 不需要（纯张量） | 0 |
 | ComfyUI-Loaders | 2 | ✅ | 不需要（读文件头/元数据） | 0 |
 | ComfyUI-Filter | 2 | ✅ | 不需要（纯张量） | 0 |
-| **合计** | **65** | **✅** | **15 项已真实运行** | **0** |
+| **合计** | **66** | **✅** | **15 项已真实运行 + 3 条串联链** | **0** |
 
 ## L3 明细（需要模型的节点）
 
@@ -57,6 +57,23 @@
 | 节点注册 | `object_info` 4119 个节点类型；抽样 9 个 cfx 节点全部存在 |
 | 工作流 A（primitives + IO） | LoadImage → Image Resize → Save Image(Metadata) + Text → Save Text 全部执行；产出 `cfx_smoke_00001_.png` 与内容精确匹配的 `cfx_smoke.txt` |
 | 工作流 B（Florence-2 链路） | LoadImage → Florence-2 Loader/Run(tags) → Tags Filter → Save Text；产出 `1girl, solo, smile, blue eyes, blonde hair, dress, ...` |
+
+## 跨节点串联验证（cross-node chains）
+
+`tools/verify/canvas_chains.py` 通过真实 ComfyUI 引擎提交多节点图（**3 条链全部通过**）：
+
+| 链 | 图 | 结果 |
+|---|---|---|
+| A · Vision 内部 | LoadImage → Florence-2 `region_caption` → **JSON BBox** → Florence-2 **Region** → Save Text | `cartoon character with yellow hair and blue eyes, wearing a pink dress`（无 loc token 回显）|
+| B · Segment 内部 | LoadImage → SAM2 + **Text→Mask** → **Mask→SEGS** → **SEGS→Mask** → **Mask→BBox** → Save Text | `1 box(es); first: [62, 37, 731, 768]` |
+| C · **跨包**（Vision×Segment） | LoadImage → Florence-2 检测 → **Annotations→Mask** → **SEGS 往返** → **Mask→BBox** → Save Text | `1 box(es); first: [60, 34, 734, 767]` |
+
+**串联过程中发现并处理的问题**（均为集成层面，单测无法覆盖）：
+1. 缺桥接节点：检测 JSON 无法转成 4×INT 驱动区域细化 → 新增 `comfyui_primitives_json_bbox`；
+2. `region_proposal` 对示例图**无输出框**（此前只验类型未验数量）→ 链路改用 `region_caption`（3 框）；
+3. 验证脚本的等待逻辑只认成功不认失败 → 改为识别 `status_str=error` 并回传异常详情；
+4. **API 提交必须显式给出全部 required 输入**（GUI 默认值不自动生效）→ 脚本改为从 `/object_info` 自动补默认值；
+5. 相同图会命中 ComfyUI 节点缓存导致"未执行" → 改为每次运行使用唯一输出文件名。
 
 ## 全节点清单
 
@@ -127,6 +144,7 @@
 | `comfyui_segment_sam2_auto_mask` | segment | ✅ | ✅ | 见上 |
 | `comfyui_segment_mask_to_segs` | segment | ✅ | N/A | SEGS 结构兼容（纯数据） |
 | `comfyui_segment_segs_to_mask` | segment | ✅ | N/A | SEGS 结构兼容（纯数据） |
+| `comfyui_primitives_json_bbox` | primitives | ✅ | N/A | 纯数据（检测 JSON → 4×INT） |
 
 ## 收官执行清单（L3）
 

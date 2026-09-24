@@ -33,6 +33,8 @@ python tools\verify\resolve_upscale.py
 | `blip.py` | `comfyui_vision_blip_caption` | auto-downloads `blip-image-captioning-base` (~1 GB) |
 | `vlm.py` | `comfyui_vision_vlm_caption` | auto-downloads `Qwen2.5-VL-3B-Instruct` (~7 GB) |
 | `resolve_upscale.py` | `comfyui_resolve_upscale_tiled` | an upscale model in `models/upscale_models` |
+| `canvas_smoke.py` | several | a running ComfyUI (`--port 8199`) |
+| `canvas_chains.py` | 10 nodes / 3 chains | a running ComfyUI + Florence-2, GroundingDINO, SAM2 weights |
 
 Each script prints the observed result and exits non-zero on assertion failure.
 

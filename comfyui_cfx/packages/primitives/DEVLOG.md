@@ -25,6 +25,7 @@
 | `comfyui_primitives_resolution` | specs/….md | nodes/resolution.py | ….review.md | tests/test_primitives_resolution.py | VERIFY |
 | `comfyui_primitives_save_image_metadata` | specs/….md | nodes/save.py | ….review.md | tests/test_primitives_save.py | VERIFY |
 | `comfyui_primitives_seed` | specs/….md | nodes/seed.py | ….review.md | tests/test_primitives_seed.py | VERIFY |
+| `comfyui_primitives_json_bbox` | specs/comfyui_primitives_json_bbox.md | nodes/json_access.py | specs/comfyui_primitives_json_bbox.review.md | tests/test_primitives_json_bbox.py | VERIFY |
 
 ## 3. 里程碑
 - M1 — `image_resize` 全链路（SPEC→IMPL→REVIEW→VERIFY）跑通 | 状态：DONE
@@ -49,6 +50,8 @@
 - 2026-09-23 | Architect | 将 `batch_list` 拆为 image_batch / image_split（ComfyUI 的 OUTPUT_IS_LIST 需在类定义期确定） | 本记录 | DONE
 - 2026-09-23 | Spec-Writer/Implementer/Adversary | M4：batch/split/seed/resolution/save 契约、实现、审查全部 PASS | nodes/*.py, specs/*.md | DONE
 - 2026-09-23 | Verifier | M4 单测通过 | tests/test_primitives_{batch,seed,resolution,save}.py | VERIFY
+- 2026-09-25 | Spec-Writer/Implementer/Adversary | JSON BBox：契约、实现、审查全部 PASS，检测字典 → 4×INT 桥接 | nodes/json_access.py, specs/comfyui_primitives_json_bbox*.md | DONE
+- 2026-09-25 | Verifier | JSON BBox 单测通过 | tests/test_primitives_json_bbox.py | VERIFY
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |

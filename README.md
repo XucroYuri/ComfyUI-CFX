@@ -12,9 +12,9 @@ append-only development record (`DEVLOG.md`).
 | Metric | Value |
 |---|---|
 | Packages | 14 |
-| Nodes | 65 |
-| Unit tests | 400 passing |
-| Real end-to-end verified | 15 nodes (models: Florence-2 incl. region, WD14, BLIP, BLIP2, Qwen2.5-VL, CLIP-Interrogator, GroundingDINO, rembg, SAM2 框/点/自动, RetinaFace, RealESRGAN) |
+| Nodes | 66 |
+| Unit tests | 409 passing |
+| Real end-to-end verified | 15 nodes + 3 cross-node chains via the real ComfyUI engine |
 | License | MIT (`packages/**` enforced MIT by `tools/license_gate.py`) |
 
 See `docs/verification-matrix.md` for the node-by-node verification ledger.
@@ -23,7 +23,7 @@ See `docs/verification-matrix.md` for the node-by-node verification ledger.
 
 | Package | Nodes | Notes |
 |---|---|---|
-| `ComfyUI-Primitives` | 14 | text / number / logic / image / mask / resolution / seed / save |
+| `ComfyUI-Primitives` | 15 | text / number / logic / image / mask / resolution / seed / save / json bbox |
 | `ComfyUI-Flow` | 6 | string function, show text, constrain image, repeater, load/save text |
 | `ComfyUI-Vision` | 10 | Florence-2 load/run/region, WD14 tagger, BLIP, BLIP2, Qwen2.5/3-VL, CLIP interrogator, caption clean, tags filter |
 | `ComfyUI-Segment` | 12 | annotations↔mask, mask↔bbox, GroundingDINO, text→mask, SAM2 load/mask/points/auto, SEGS compat, matting, face crop |

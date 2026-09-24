@@ -47,6 +47,9 @@
 - 2026-09-24 | Integrator | 建立 GitHub 远端并推送（private，main） | https://github.com/XucroYuri/ComfyUI-CFX | DONE
 - 2026-09-24 | Implementer | P3 骨架 + 首节点（audio/loaders/filter）+ 各包深化 8 节点，共 56 节点 | packages/* | DONE
 - 2026-09-24 | Integrator | 收尾：README 安装/启用文档；junction 接入 custom_nodes；**画布实测两条链路通过** | README.md, tools/verify/canvas_smoke.py | DONE
+- 2026-09-25 | Implementer | 深化模型类：BLIP2 / Florence-2 区域 / SAM2 自动分割 / SEGS 双向（L3 新增 3 项） | packages/* | DONE
+- 2026-09-25 | Implementer | 新增桥接节点 `comfyui_primitives_json_bbox`（检测 JSON → 4×INT） | packages/primitives | DONE
+- 2026-09-25 | Verifier | **跨节点串联验证 3 条链通过**（Vision 内部 / Segment 内部 / 跨包），并修掉 5 处集成层问题 | tools/verify/canvas_chains.py | DONE
 
 ## 5. 风险 / 阻塞
 | 项 | 影响 | 缓解 | 状态 |
