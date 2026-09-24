@@ -45,7 +45,15 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: pip install torch --index-url https://download.pytorch.org/whl/cpu
       - run: pip install numpy pillow pytest
-      - run: pytest
+      - name: Run pytest
+        run: |
+          set -o pipefail
+          pytest -q 2>&1 | tee pytest.log
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pytest-pure-${{ matrix.python-version }}
+          path: pytest.log
 
   test-full:
     # Full suite in a CPU ComfyUI environment. Scheduled/manual only: installing ComfyUI is
