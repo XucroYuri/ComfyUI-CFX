@@ -2,11 +2,9 @@
 
 from pathlib import Path
 
-import folder_paths
 import numpy as np
 import torch
 
-from ....core.paths import safe_join
 from ....core.types import ensure_image
 from ..pose_library import labels, load, prompts, resolve
 
@@ -40,6 +38,11 @@ class CFXPoseReferencePicker:
         return float("nan")
 
     def pick(self, pose, view, source_mode):
+        # Keep the ControlNet registry importable in the ComfyUI-free test suite.
+        import folder_paths
+
+        from ....core.paths import safe_join
+
         root = Path(folder_paths.get_input_directory()).resolve()
         cache = Path(safe_join(str(root), "posewear"))
         if not cache.resolve().is_relative_to(root):
