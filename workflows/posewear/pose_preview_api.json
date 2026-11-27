@@ -1,0 +1,20 @@
+{
+  "1": {
+    "class_type": "comfyui_controlnet_pick_pose",
+    "inputs": {
+      "pose": "full_single_P001 | 后仰坐·单膝立起 (坐姿)",
+      "view": "diag",
+      "source_mode": "on demand"
+    }
+  },
+  "2": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "1",
+        0
+      ],
+      "filename_prefix": "posewear_reference/preview"
+    }
+  }
+}

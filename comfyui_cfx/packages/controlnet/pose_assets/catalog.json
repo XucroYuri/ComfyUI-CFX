@@ -1,0 +1,3530 @@
+[
+  {
+    "id": "full_single_P001",
+    "title": "后仰坐·单膝立起",
+    "category": "坐姿",
+    "framing": "全身·标准",
+    "zh": "后仰坐·单膝立起，全身·标准，坐姿姿势",
+    "en": "sitting leaning back, one knee raised, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P001/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P001_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P001_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P001_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P001_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P001_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P002",
+    "title": "单手支撑·双腿前伸",
+    "category": "坐姿",
+    "framing": "全身·标准",
+    "zh": "单手支撑·双腿前伸，全身·标准，坐姿姿势",
+    "en": "propped on one hand, legs swept forward, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P002/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P002_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P002_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P002_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P002_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P002_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P003",
+    "title": "双手后撑·挺胸",
+    "category": "坐姿",
+    "framing": "全身·标准",
+    "zh": "双手后撑·挺胸，全身·标准，坐姿姿势",
+    "en": "hands propped behind, chest pushed out, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P003/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P003_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P003_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P003_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P003_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P003_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P004",
+    "title": "抱膝坐·膝盖倒向左侧",
+    "category": "坐姿",
+    "framing": "全身·标准",
+    "zh": "抱膝坐·膝盖倒向左侧，全身·标准，坐姿姿势",
+    "en": "sitting with knees up, knees tilted to the left, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P004/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P004_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P004_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P004_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P004_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P004_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P005",
+    "title": "单膝立起·手抚发",
+    "category": "坐姿",
+    "framing": "全身·标准",
+    "zh": "单膝立起·手抚发，全身·标准，坐姿姿势",
+    "en": "one knee up, hand in hair, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P005/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P005_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P005_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P005_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P005_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P005_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P006",
+    "title": "斜伸双腿手叉腰",
+    "category": "坐姿",
+    "framing": "全身·标准",
+    "zh": "斜伸双腿手叉腰，全身·标准，坐姿姿势",
+    "en": "legs extended diagonally, hand on hip, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P006/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P006_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P006_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P006_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P006_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P006_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P007",
+    "title": "双肘撑地半躺",
+    "category": "坐姿",
+    "framing": "全身·标准",
+    "zh": "双肘撑地半躺，全身·标准，坐姿姿势",
+    "en": "reclining on both elbows, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P007/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P007_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P007_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P007_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P007_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P007_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P008",
+    "title": "屈膝双手抱头",
+    "category": "坐姿",
+    "framing": "全身·标准",
+    "zh": "屈膝双手抱头，全身·标准，坐姿姿势",
+    "en": "knees up, hands behind head, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P008/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P008_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P008_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P008_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P008_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P008_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P009",
+    "title": "向右倾斜·手肘支撑",
+    "category": "坐姿",
+    "framing": "全身·标准",
+    "zh": "向右倾斜·手肘支撑，全身·标准，坐姿姿势",
+    "en": "leaning right, propped on elbow, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P009/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P009_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P009_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P009_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P009_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P009_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P010",
+    "title": "手扶脚踝",
+    "category": "坐姿",
+    "framing": "全身·标准",
+    "zh": "手扶脚踝，全身·标准，坐姿姿势",
+    "en": "hand on ankle, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P010/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P010_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P010_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P010_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P010_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P010_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P011",
+    "title": "双手抱头·挺胸后仰",
+    "category": "坐姿",
+    "framing": "全身·标准",
+    "zh": "双手抱头·挺胸后仰，全身·标准，坐姿姿势",
+    "en": "hands behind head, chest arched, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P011/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P011_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P011_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P011_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P011_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P011_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P012",
+    "title": "单膝立起·托腮",
+    "category": "坐姿",
+    "framing": "全身·标准",
+    "zh": "单膝立起·托腮，全身·标准，坐姿姿势",
+    "en": "one knee up, chin in hand, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P012/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P012_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P012_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P012_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P012_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P012_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P013",
+    "title": "后仰双腿悬空",
+    "category": "坐姿",
+    "framing": "全身·标准",
+    "zh": "后仰双腿悬空，全身·标准，坐姿姿势",
+    "en": "leaning back with both legs lifted, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P013/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P013_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P013_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P013_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P013_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P013_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P014",
+    "title": "单膝立起手握脚踝",
+    "category": "坐姿",
+    "framing": "全身·标准",
+    "zh": "单膝立起手握脚踝，全身·标准，坐姿姿势",
+    "en": "one knee up, holding ankle, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P014/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P014_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P014_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P014_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P014_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P014_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P015",
+    "title": "站姿·对立式手叉腰",
+    "category": "站姿",
+    "framing": "全身·标准",
+    "zh": "站姿·对立式手叉腰，全身·标准，站姿姿势",
+    "en": "standing contrapposto, hand on hip, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P015/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P015_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P015_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P015_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P015_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P015_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P016",
+    "title": "站姿·双手撩发",
+    "category": "站姿",
+    "framing": "全身·标准",
+    "zh": "站姿·双手撩发，全身·标准，站姿姿势",
+    "en": "standing, both hands sweeping hair up, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P016/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P016_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P016_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P016_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P016_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P016_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P017",
+    "title": "站姿·越肩回眸",
+    "category": "站姿",
+    "framing": "全身·标准",
+    "zh": "站姿·越肩回眸，全身·标准，站姿姿势",
+    "en": "standing, looking back over shoulder, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P017/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P017_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P017_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P017_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P017_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P017_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P018",
+    "title": "站姿·双手叉腰",
+    "category": "站姿",
+    "framing": "全身·标准",
+    "zh": "站姿·双手叉腰，全身·标准，站姿姿势",
+    "en": "standing, hands on hips, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P018/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P018_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P018_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P018_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P018_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P018_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P019",
+    "title": "站姿·双臂举过头顶",
+    "category": "站姿",
+    "framing": "全身·标准",
+    "zh": "站姿·双臂举过头顶，全身·标准，站姿姿势",
+    "en": "standing, arms stretched overhead, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P019/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P019_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P019_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P019_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P019_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P019_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P020",
+    "title": "站姿·一手放后脑",
+    "category": "站姿",
+    "framing": "全身·标准",
+    "zh": "站姿·一手放后脑，全身·标准，站姿姿势",
+    "en": "standing, one hand behind head, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P020/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P020_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P020_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P020_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P020_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P020_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P021",
+    "title": "站姿·手放颈间与大腿",
+    "category": "站姿",
+    "framing": "全身·标准",
+    "zh": "站姿·手放颈间与大腿，全身·标准，站姿姿势",
+    "en": "standing, hands on neck and thigh, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P021/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P021_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P021_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P021_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P021_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P021_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P022",
+    "title": "站姿·手背后挺胸",
+    "category": "站姿",
+    "framing": "全身·标准",
+    "zh": "站姿·手背后挺胸，全身·标准，站姿姿势",
+    "en": "standing, arms behind back, chest out, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P022/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P022_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P022_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P022_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P022_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P022_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P024",
+    "title": "站姿·一脚向后抬起",
+    "category": "站姿",
+    "framing": "全身·标准",
+    "zh": "站姿·一脚向后抬起，全身·标准，站姿姿势",
+    "en": "standing, one foot kicked up behind, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P024/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P024_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P024_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P024_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P024_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P024_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P025",
+    "title": "站姿·开腿双手叉腰",
+    "category": "站姿",
+    "framing": "全身·标准",
+    "zh": "站姿·开腿双手叉腰，全身·标准，站姿姿势",
+    "en": "standing legs apart, hands on hips, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P025/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P025_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P025_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P025_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P025_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P025_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P026",
+    "title": "站姿·举一臂顶胯",
+    "category": "站姿",
+    "framing": "全身·标准",
+    "zh": "站姿·举一臂顶胯，全身·标准，站姿姿势",
+    "en": "standing, one arm raised, hip pushed out, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P026/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P026_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P026_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P026_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P026_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P026_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P027",
+    "title": "站姿·双手放后颈",
+    "category": "站姿",
+    "framing": "全身·标准",
+    "zh": "站姿·双手放后颈，全身·标准，站姿姿势",
+    "en": "standing, both hands on nape, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P027/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P027_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P027_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P027_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P027_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P027_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P029",
+    "title": "站姿·秀发飘扬",
+    "category": "站姿",
+    "framing": "全身·标准",
+    "zh": "站姿·秀发飘扬，全身·标准，站姿姿势",
+    "en": "standing, hair flowing in the wind, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P029/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P029_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P029_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P029_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P029_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P029_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P030",
+    "title": "站姿·踮脚双臂V字",
+    "category": "站姿",
+    "framing": "全身·标准",
+    "zh": "站姿·踮脚双臂V字，全身·标准，站姿姿势",
+    "en": "standing on tiptoes, arms in a V, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P030/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P030_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P030_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P030_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P030_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P030_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P031",
+    "title": "跪立·双手放大腿",
+    "category": "跪立",
+    "framing": "全身·标准",
+    "zh": "跪立·双手放大腿，全身·标准，跪立姿势",
+    "en": "kneeling upright, hands on thighs, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P031/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P031_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P031_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P031_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P031_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P031_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P032",
+    "title": "跪立·双手抱头",
+    "category": "跪立",
+    "framing": "全身·标准",
+    "zh": "跪立·双手抱头，全身·标准，跪立姿势",
+    "en": "kneeling upright, hands behind head, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P032/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P032_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P032_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P032_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P032_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P032_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P033",
+    "title": "单膝跪·手放膝上",
+    "category": "跪立",
+    "framing": "全身·标准",
+    "zh": "单膝跪·手放膝上，全身·标准，跪立姿势",
+    "en": "half-kneeling, hand on knee, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P033/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P033_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P033_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P033_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P033_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P033_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P034",
+    "title": "跪立·上身后仰",
+    "category": "跪立",
+    "framing": "全身·标准",
+    "zh": "跪立·上身后仰，全身·标准，跪立姿势",
+    "en": "kneeling, upper body arched back, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P034/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P034_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P034_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P034_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P034_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P034_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P035",
+    "title": "跪立·双臂上伸",
+    "category": "跪立",
+    "framing": "全身·标准",
+    "zh": "跪立·双臂上伸，全身·标准，跪立姿势",
+    "en": "kneeling upright, arms stretched up, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P035/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P035_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P035_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P035_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P035_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P035_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P036",
+    "title": "跪立·一手抚发一手叉腰",
+    "category": "跪立",
+    "framing": "全身·标准",
+    "zh": "跪立·一手抚发一手叉腰，全身·标准，跪立姿势",
+    "en": "kneeling, one hand in hair, other on hip, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P036/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P036_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P036_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P036_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P036_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P036_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P037",
+    "title": "单膝跪·仰视",
+    "category": "跪立",
+    "framing": "全身·标准",
+    "zh": "单膝跪·仰视，全身·标准，跪立姿势",
+    "en": "half-kneeling, looking up, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P037/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P037_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P037_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P037_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P037_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P037_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P038",
+    "title": "跪立·侧倾手撑地",
+    "category": "跪立",
+    "framing": "全身·标准",
+    "zh": "跪立·侧倾手撑地，全身·标准，跪立姿势",
+    "en": "kneeling, leaning sideways, hand on floor, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P038/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P038_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P038_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P038_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P038_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P038_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P039",
+    "title": "跪立·手叉腰后仰",
+    "category": "跪立",
+    "framing": "全身·标准",
+    "zh": "跪立·手叉腰后仰，全身·标准，跪立姿势",
+    "en": "kneeling, hands on hips, arching, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P039/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P039_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P039_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P039_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P039_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P039_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P040",
+    "title": "跪立·摆腰举一臂",
+    "category": "跪立",
+    "framing": "全身·标准",
+    "zh": "跪立·摆腰举一臂，全身·标准，跪立姿势",
+    "en": "kneeling, swaying hips, one arm raised, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P040/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P040_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P040_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P040_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P040_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P040_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P041",
+    "title": "鸭子坐·双手放腿上",
+    "category": "侧坐·鸭子坐",
+    "framing": "全身·标准",
+    "zh": "鸭子坐·双手放腿上，全身·标准，侧坐·鸭子坐姿势",
+    "en": "W-sitting, hands on thighs, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P041/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P041_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P041_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P041_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P041_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P041_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P042",
+    "title": "鸭子坐·双手前撑",
+    "category": "侧坐·鸭子坐",
+    "framing": "全身·标准",
+    "zh": "鸭子坐·双手前撑，全身·标准，侧坐·鸭子坐姿势",
+    "en": "W-sitting, hands on floor in front, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P042/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P042_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P042_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P042_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P042_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P042_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P043",
+    "title": "鸭子坐·双手抱头",
+    "category": "侧坐·鸭子坐",
+    "framing": "全身·标准",
+    "zh": "鸭子坐·双手抱头，全身·标准，侧坐·鸭子坐姿势",
+    "en": "W-sitting, hands behind head, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P043/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P043_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P043_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P043_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P043_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P043_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P044",
+    "title": "鸭子坐·双手后撑",
+    "category": "侧坐·鸭子坐",
+    "framing": "全身·标准",
+    "zh": "鸭子坐·双手后撑，全身·标准，侧坐·鸭子坐姿势",
+    "en": "W-sitting, hands propped behind, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P044/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P044_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P044_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P044_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P044_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P044_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P045",
+    "title": "侧坐·双腿斜向右侧",
+    "category": "侧坐·鸭子坐",
+    "framing": "全身·标准",
+    "zh": "侧坐·双腿斜向右侧，全身·标准，侧坐·鸭子坐姿势",
+    "en": "side-sitting, legs swept to the right, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P045/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P045_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P045_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P045_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P045_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P045_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P046",
+    "title": "侧坐·手贴脸颊",
+    "category": "侧坐·鸭子坐",
+    "framing": "全身·标准",
+    "zh": "侧坐·手贴脸颊，全身·标准，侧坐·鸭子坐姿势",
+    "en": "side-sitting, hand on cheek, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P046/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P046_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P046_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P046_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P046_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P046_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P047",
+    "title": "侧坐·一臂上伸",
+    "category": "侧坐·鸭子坐",
+    "framing": "全身·标准",
+    "zh": "侧坐·一臂上伸，全身·标准，侧坐·鸭子坐姿势",
+    "en": "side-sitting, one arm stretched up, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P047/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P047_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P047_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P047_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P047_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P047_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P048",
+    "title": "鸭子坐·手放颈间",
+    "category": "侧坐·鸭子坐",
+    "framing": "全身·标准",
+    "zh": "鸭子坐·手放颈间，全身·标准，侧坐·鸭子坐姿势",
+    "en": "W-sitting, hand at neck, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P048/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P048_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P048_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P048_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P048_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P048_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P049",
+    "title": "仰卧·双臂举过头顶",
+    "category": "躺卧",
+    "framing": "全身·标准",
+    "zh": "仰卧·双臂举过头顶，全身·标准，躺卧姿势",
+    "en": "lying on back, arms overhead, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P049/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P049_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P049_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P049_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P049_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P049_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P050",
+    "title": "侧卧·托腮",
+    "category": "躺卧",
+    "framing": "全身·标准",
+    "zh": "侧卧·托腮，全身·标准，躺卧姿势",
+    "en": "lying on side, head propped on hand, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P050/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P050_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P050_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P050_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P050_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P050_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P051",
+    "title": "俯卧·双脚上翘",
+    "category": "躺卧",
+    "framing": "全身·标准",
+    "zh": "俯卧·双脚上翘，全身·标准，躺卧姿势",
+    "en": "lying prone with feet up, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P051/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P051_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P051_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P051_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P051_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P051_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P052",
+    "title": "仰卧·单膝立起",
+    "category": "躺卧",
+    "framing": "全身·标准",
+    "zh": "仰卧·单膝立起，全身·标准，躺卧姿势",
+    "en": "lying on back, one knee bent up, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P052/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P052_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P052_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P052_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P052_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P052_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P054",
+    "title": "侧卧·腰臀曲线",
+    "category": "躺卧",
+    "framing": "全身·标准",
+    "zh": "侧卧·腰臀曲线，全身·标准，躺卧姿势",
+    "en": "lying on side, showing waist curve, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P054/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P054_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P054_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P054_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P054_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P054_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P056",
+    "title": "仰卧·双腿垂直向上",
+    "category": "躺卧",
+    "framing": "全身·标准",
+    "zh": "仰卧·双腿垂直向上，全身·标准，躺卧姿势",
+    "en": "lying on back, both legs straight up, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P056/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P056_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P056_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P056_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P056_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P056_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P057",
+    "title": "侧卧·一臂举过头顶",
+    "category": "躺卧",
+    "framing": "全身·标准",
+    "zh": "侧卧·一臂举过头顶，全身·标准，躺卧姿势",
+    "en": "lying on side, one arm overhead, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P057/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P057_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P057_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P057_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P057_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P057_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P058",
+    "title": "俯卧·枕臂",
+    "category": "躺卧",
+    "framing": "全身·标准",
+    "zh": "俯卧·枕臂，全身·标准，躺卧姿势",
+    "en": "lying prone, head resting on arms, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P058/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P058_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P058_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P058_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P058_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P058_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P059",
+    "title": "仰卧·挺胸",
+    "category": "躺卧",
+    "framing": "全身·标准",
+    "zh": "仰卧·挺胸，全身·标准，躺卧姿势",
+    "en": "lying on back, chest arched up, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P059/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P059_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P059_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P059_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P059_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P059_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P061",
+    "title": "蹲姿·手放膝上",
+    "category": "蹲姿",
+    "framing": "全身·标准",
+    "zh": "蹲姿·手放膝上，全身·标准，蹲姿姿势",
+    "en": "squatting, hands on knees, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P061/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P061_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P061_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P061_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P061_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P061_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P062",
+    "title": "蹲姿·单手撑地",
+    "category": "蹲姿",
+    "framing": "全身·标准",
+    "zh": "蹲姿·单手撑地，全身·标准，蹲姿姿势",
+    "en": "squatting, one hand on the floor, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P062/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P062_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P062_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P062_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P062_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P062_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P063",
+    "title": "蹲姿·托腮",
+    "category": "蹲姿",
+    "framing": "全身·标准",
+    "zh": "蹲姿·托腮，全身·标准，蹲姿姿势",
+    "en": "squatting, chin resting on hand, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P063/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P063_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P063_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P063_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P063_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P063_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P064",
+    "title": "蹲姿·手抚头发",
+    "category": "蹲姿",
+    "framing": "全身·标准",
+    "zh": "蹲姿·手抚头发，全身·标准，蹲姿姿势",
+    "en": "squatting, hand in hair, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P064/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P064_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P064_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P064_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P064_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P064_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P065",
+    "title": "踮脚蹲·双手撑地",
+    "category": "蹲姿",
+    "framing": "全身·标准",
+    "zh": "踮脚蹲·双手撑地，全身·标准，蹲姿姿势",
+    "en": "squatting on tiptoes, both hands on the floor, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P065/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P065_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P065_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P065_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P065_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P065_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P066",
+    "title": "蹲姿·回头",
+    "category": "蹲姿",
+    "framing": "全身·标准",
+    "zh": "蹲姿·回头，全身·标准，蹲姿姿势",
+    "en": "squatting, looking back over shoulder, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P066/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P066_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P066_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P066_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P066_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P066_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P067",
+    "title": "前倾·手放膝上",
+    "category": "前倾",
+    "framing": "全身·标准",
+    "zh": "前倾·手放膝上，全身·标准，前倾姿势",
+    "en": "leaning forward, hands on knees, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P067/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P067_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P067_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P067_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P067_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P067_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P068",
+    "title": "前倾·手触小腿",
+    "category": "前倾",
+    "framing": "全身·标准",
+    "zh": "前倾·手触小腿，全身·标准，前倾姿势",
+    "en": "bending forward, touching shins, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P068/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P068_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P068_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P068_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P068_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P068_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P069",
+    "title": "前倾·一手叉腰·仰视",
+    "category": "前倾",
+    "framing": "全身·标准",
+    "zh": "前倾·一手叉腰·仰视，全身·标准，前倾姿势",
+    "en": "leaning forward, hand on hip, looking up, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P069/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P069_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P069_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P069_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P069_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P069_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P070",
+    "title": "前倾·手扶大腿·收臀",
+    "category": "前倾",
+    "framing": "全身·标准",
+    "zh": "前倾·手扶大腿·收臀，全身·标准，前倾姿势",
+    "en": "leaning forward, hands on thighs, hips pushed back, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P070/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P070_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P070_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P070_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P070_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P070_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P071",
+    "title": "前倾·双臂自然下垂",
+    "category": "前倾",
+    "framing": "全身·标准",
+    "zh": "前倾·双臂自然下垂，全身·标准，前倾姿势",
+    "en": "bending forward, arms hanging loose, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P071/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P071_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P071_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P071_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P071_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P071_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P072",
+    "title": "前倾·一腿后抬",
+    "category": "前倾",
+    "framing": "全身·标准",
+    "zh": "前倾·一腿后抬，全身·标准，前倾姿势",
+    "en": "leaning forward, one leg kicked back, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P072/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P072_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P072_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P072_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P072_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P072_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P073",
+    "title": "站姿后仰",
+    "category": "后仰",
+    "framing": "全身·标准",
+    "zh": "站姿后仰，全身·标准，后仰姿势",
+    "en": "standing backbend, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P073/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P073_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P073_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P073_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P073_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P073_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P074",
+    "title": "跪立·后撑后仰",
+    "category": "后仰",
+    "framing": "全身·标准",
+    "zh": "跪立·后撑后仰，全身·标准，后仰姿势",
+    "en": "kneeling, hands behind, arching back, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P074/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P074_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P074_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P074_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P074_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P074_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P075",
+    "title": "后仰·双臂上举",
+    "category": "后仰",
+    "framing": "全身·标准",
+    "zh": "后仰·双臂上举，全身·标准，后仰姿势",
+    "en": "arching back with both arms raised, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P075/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P075_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P075_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P075_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P075_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P075_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P077",
+    "title": "扭身·站立展臂",
+    "category": "扭身",
+    "framing": "全身·标准",
+    "zh": "扭身·站立展臂，全身·标准，扭身姿势",
+    "en": "standing twist with arms spread, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P077/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P077_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P077_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P077_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P077_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P077_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P078",
+    "title": "扭身·跪立回头",
+    "category": "扭身",
+    "framing": "全身·标准",
+    "zh": "扭身·跪立回头，全身·标准，扭身姿势",
+    "en": "kneeling upright, twisting to look back, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P078/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P078_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P078_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P078_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P078_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P078_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "full_single_P079",
+    "title": "扭身·坐姿扭转上身",
+    "category": "扭身",
+    "framing": "全身·标准",
+    "zh": "扭身·坐姿扭转上身，全身·标准，扭身姿势",
+    "en": "seated, twisting the upper body, full body, solo",
+    "source": "https://posewear.pages.dev/pose/full_single_P079/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P079_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/full_single_P079_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/full_single_P079_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P079_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/full_single_P079_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P001",
+    "title": "胸前双手比心",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "胸前双手比心，上半身，可爱姿势",
+    "en": "heart shape with both hands in front of chest, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P001/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P001_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P001_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P001_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P001_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P001_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P002",
+    "title": "头顶双臂比心",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "头顶双臂比心，上半身，可爱姿势",
+    "en": "big heart with arms over head, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P002/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P002_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P002_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P002_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P002_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P002_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P003",
+    "title": "脸颊旁比指尖心",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "脸颊旁比指尖心，上半身，可爱姿势",
+    "en": "finger heart beside cheek, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P003/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P003_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P003_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P003_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P003_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P003_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P004",
+    "title": "下巴下比双剪刀手",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "下巴下比双剪刀手，上半身，可爱姿势",
+    "en": "double peace sign under the chin, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P004/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P004_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P004_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P004_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P004_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P004_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P005",
+    "title": "辣妹剪刀手（手背朝外）",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "辣妹剪刀手（手背朝外），上半身，可爱姿势",
+    "en": "gyaru peace sign, back of hand facing out, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P005/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P005_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P005_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P005_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P005_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P005_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P006",
+    "title": "握拳贴脸（装可爱）",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "握拳贴脸（装可爱），上半身，可爱姿势",
+    "en": "fists on cheeks, cutesy pose, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P006/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P006_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P006_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P006_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P006_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P006_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P007",
+    "title": "兔耳手势",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "兔耳手势，上半身，可爱姿势",
+    "en": "bunny ears pose with hands on head, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P007/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P007_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P007_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P007_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P007_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P007_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P008",
+    "title": "招财猫猫爪手",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "招财猫猫爪手，上半身，可爱姿势",
+    "en": "maneki-neko cat paw gesture, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P008/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P008_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P008_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P008_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P008_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P008_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P009",
+    "title": "嗷呜怪兽爪姿势",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "嗷呜怪兽爪姿势，上半身，可爱姿势",
+    "en": "playful \"rawr\" monster claw pose, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P009/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P009_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P009_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P009_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P009_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P009_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P010",
+    "title": "嘘（食指抵唇）",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "嘘（食指抵唇），上半身，可爱姿势",
+    "en": "shush gesture, index finger on lips, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P010/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P010_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P010_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P010_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P010_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P010_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P011",
+    "title": "歪头＋手遮一眼（眨眼风）",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "歪头＋手遮一眼（眨眼风），上半身，可爱姿势",
+    "en": "head tilt, hand over one eye, wink style, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P011/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P011_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P011_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P011_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P011_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P011_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P012",
+    "title": "飞吻",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "飞吻，上半身，可爱姿势",
+    "en": "blowing a kiss, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P012/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P012_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P012_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P012_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P012_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P012_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P013",
+    "title": "双手托下巴（花朵姿势）",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "双手托下巴（花朵姿势），上半身，可爱姿势",
+    "en": "chin resting on both palms, flower pose, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P013/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P013_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P013_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P013_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P013_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P013_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P014",
+    "title": "食指戳脸颊",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "食指戳脸颊，上半身，可爱姿势",
+    "en": "poking cheek with index finger, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P014/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P014_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P014_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P014_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P014_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P014_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P015",
+    "title": "萌袖风双手掩嘴",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "萌袖风双手掩嘴，上半身，可爱姿势",
+    "en": "covering mouth with both hands, sweater-paw style, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P015/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P015_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P015_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P015_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P015_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P015_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P016",
+    "title": "拜托姿势（双手合十）",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "拜托姿势（双手合十），上半身，可爱姿势",
+    "en": "pleading pose, palms pressed together, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P016/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P016_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P016_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P016_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P016_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P016_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P017",
+    "title": "害羞自抱",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "害羞自抱，上半身，可爱姿势",
+    "en": "shyly hugging oneself, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P017/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P017_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P017_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P017_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P017_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P017_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P018",
+    "title": "手指取景框",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "手指取景框，上半身，可爱姿势",
+    "en": "finger frame gesture, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P018/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P018_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P018_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P018_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P018_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P018_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P019",
+    "title": "将头发别到耳后",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "将头发别到耳后，上半身，可爱姿势",
+    "en": "tucking hair behind ear, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P019/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P019_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P019_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P019_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P019_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P019_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P020",
+    "title": "双手捧脸",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "双手捧脸，上半身，可爱姿势",
+    "en": "cupping cheeks with both hands, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P020/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P020_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P020_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P020_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P020_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P020_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P021",
+    "title": "敬礼姿势",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "敬礼姿势，上半身，可爱姿势",
+    "en": "salute pose, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P021/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P021_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P021_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P021_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P021_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P021_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P022",
+    "title": "指向镜头",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "指向镜头，上半身，可爱姿势",
+    "en": "pointing at the camera, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P022/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P022_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P022_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P022_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P022_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P022_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P023",
+    "title": "打哈欠伸懒腰（一手掩口）",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "打哈欠伸懒腰（一手掩口），上半身，可爱姿势",
+    "en": "yawning stretch, one hand at mouth, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P023/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P023_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P023_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P023_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P023_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P023_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P024",
+    "title": "单手比心＋另一手放胸前",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "单手比心＋另一手放胸前，上半身，可爱姿势",
+    "en": "one-hand heart, other hand on chest, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P024/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P024_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P024_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P024_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P024_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P024_diag.webp"
+      }
+    }
+  },
+  {
+    "id": "upper80v2_P025",
+    "title": "从指缝间偷看",
+    "category": "可爱",
+    "framing": "上半身",
+    "zh": "从指缝间偷看，上半身，可爱姿势",
+    "en": "peeking through fingers, upper body, solo",
+    "source": "https://posewear.pages.dev/pose/upper80v2_P025/",
+    "angles": {
+      "front": {
+        "label": "正面",
+        "prompt": "front view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P025_front.webp"
+      },
+      "high": {
+        "label": "俯拍",
+        "prompt": "high angle, from above",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P025_high.webp"
+      },
+      "low": {
+        "label": "仰拍",
+        "prompt": "low angle, from below",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P025_low.webp"
+      },
+      "side": {
+        "label": "侧面",
+        "prompt": "side view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P025_side.webp"
+      },
+      "diag": {
+        "label": "斜侧",
+        "prompt": "three-quarter view",
+        "url": "https://posewear.pages.dev/p/i/upper80v2_P025_diag.webp"
+      }
+    }
+  }
+]

@@ -37,3 +37,7 @@
 
 ## 6. 下一步
 1. 实现 `comfyui_controlnet_canny`。
+
+- 2026-11-27 | Implementer | Add the PoseWear reference picker and reusable workflows | nodes/pose_reference.py, pose_assets/ | IMPL
+- 2026-11-27 | Reviewer | Check provenance, offline behavior and cache containment | specs/comfyui_controlnet_pick_pose.review.md | REVIEW
+- 2026-11-27 | Verifier | Exercise offline and live downloads in Ubuntu ComfyUI runtime | tests/test_controlnet_pose_reference.py | VERIFY

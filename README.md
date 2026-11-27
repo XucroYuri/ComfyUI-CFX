@@ -16,7 +16,7 @@ append-only development record (`DEVLOG.md`).
 | Metric | Value |
 |---|---|
 | Packages | 14 |
-| Nodes | 66 |
+| Nodes | 67 |
 | Unit tests | 409 passing |
 | Real end-to-end verified | 15 nodes + 3 cross-node chains via the real ComfyUI engine |
 | License | MIT (`packages/**` enforced MIT by `tools/license_gate.py`) |
@@ -32,7 +32,7 @@ See `docs/verification-matrix.md` for the node-by-node verification ledger.
 | `ComfyUI-Vision` | 10 | Florence-2 load/run/region, WD14 tagger, BLIP, BLIP2, Qwen2.5/3-VL, CLIP interrogator, caption clean, tags filter |
 | `ComfyUI-Segment` | 12 | annotations↔mask, mask↔bbox, GroundingDINO, text→mask, SAM2 load/mask/points/auto, SEGS compat, matting, face crop |
 | `ComfyUI-Inpaint` | 4 | crop-by-mask, stitch, outpaint canvas, outpaint to ratio |
-| `ComfyUI-ControlNet` | 3 | canny, lineart, normal-from-depth |
+| `ComfyUI-ControlNet` | 4 | canny, lineart, normal-from-depth, [PoseWear reference picker](workflows/posewear/README.md) |
 | `ComfyUI-Resolve` | 2 | scale to megapixels, tiled model upscale |
 | `ComfyUI-Depth3D` | 2 | normalize depth, colormap |
 | `ComfyUI-Sampling` | 2 | split sigmas, sigma shift |

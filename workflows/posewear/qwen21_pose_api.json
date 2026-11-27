@@ -1,0 +1,138 @@
+{
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    },
+    "_meta": {
+      "title": "VAE"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3_vl_8b_nvfp4_full.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "CLIP"
+    }
+  },
+  "1301": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "device": "auto",
+      "dtype": "default",
+      "model": [
+        "1300",
+        0
+      ]
+    }
+  },
+  "1300": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen-image-2.1/Ray Qwen2.1编辑强化 turbo v1 int8convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "3000": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "character/front.jpg"
+    }
+  },
+  "3001": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "character/angle.jpg"
+    }
+  },
+  "3002": {
+    "class_type": "comfyui_controlnet_pick_pose",
+    "inputs": {
+      "pose": "full_single_P001 | 后仰坐·单膝立起 (坐姿)",
+      "view": "diag",
+      "source_mode": "on demand"
+    }
+  },
+  "20000": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "prompt": "以 <image1>、<image2> 保持同一人物脸型和发际线。<image3> 只用来模仿身体姿势、肢体关系与镜头角度。生成单幅真人照片，全身，三分之四视图，单膝抬起，身体后倾，一手撑在矮平台上。穿藏蓝长袖衬衫与深灰长裤，放松闭唇微笑。头部与双鞋完整，自然肤质，免冠无配饰，浅灰纯色背景。",
+      "negative_prompt": "磨皮, 塑料皮肤, 网红脸, 换脸感, 五官变形, 脸型改变, 眼距改变, 鼻子变形, 嘴唇变形, 耳环, 耳坠, 大耳圈, 项链, 吊坠, 项圈, 发饰, 发夹, 发箍, 头饰, 帽子, 兔耳, 眼镜, 墨镜, 头纱, choker, earrings, necklace, hair ornament, headwear, glasses, 多人, 拼图, 网格, 文字, 水印, logo, 卡通, 二次元, 插画, 3d, 模糊, 低清晰度",
+      "resolution": 1024,
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "images.image_1": [
+        "3000",
+        0
+      ],
+      "images.image_2": [
+        "3001",
+        0
+      ],
+      "images.image_3": [
+        "3002",
+        0
+      ]
+    }
+  },
+  "20001": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 14765,
+      "steps": 25,
+      "cfg": 4.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "model": [
+        "1301",
+        0
+      ],
+      "positive": [
+        "20000",
+        0
+      ],
+      "negative": [
+        "20000",
+        1
+      ],
+      "latent_image": [
+        "20000",
+        2
+      ]
+    }
+  },
+  "20002": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "20001",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "20003": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "posewear_reference/qwen21_p001",
+      "images": [
+        "20002",
+        0
+      ]
+    }
+  }
+}
