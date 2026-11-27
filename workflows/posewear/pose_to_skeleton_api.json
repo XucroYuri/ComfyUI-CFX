@@ -1,0 +1,45 @@
+{
+  "1": {
+    "class_type": "comfyui_controlnet_pick_pose",
+    "inputs": {
+      "pose": "full_single_P001 | 后仰坐·单膝立起 (坐姿)",
+      "view": "diag",
+      "source_mode": "offline"
+    }
+  },
+  "2": {
+    "class_type": "DWPreprocessor",
+    "inputs": {
+      "image": [
+        "1",
+        0
+      ],
+      "detect_hand": "disable",
+      "detect_face": "disable",
+      "detect_body": "enable",
+      "resolution": 768,
+      "bbox_detector": "None",
+      "pose_estimator": "dw-ll_ucoco_384_bs5.torchscript.pt"
+    }
+  },
+  "3": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "2",
+        0
+      ],
+      "filename_prefix": "posewear_reference/dwpose"
+    }
+  },
+  "4": {
+    "class_type": "SavePoseKpsAsJsonFile",
+    "inputs": {
+      "pose_kps": [
+        "2",
+        1
+      ],
+      "filename_prefix": "posewear_reference/dwpose"
+    }
+  }
+}

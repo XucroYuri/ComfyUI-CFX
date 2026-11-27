@@ -1,11 +1,11 @@
 """ControlNet node registry."""
 
-from . import canny, lineart, normal
+from . import canny, lineart, normal, pose_reference
 
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
-for _module in (canny, lineart, normal):
+for _module in (canny, lineart, normal, pose_reference):
     _duplicates = NODE_CLASS_MAPPINGS.keys() & _module.NODE_CLASS_MAPPINGS.keys()
     if _duplicates:
         raise RuntimeError(f"duplicate node ids in controlnet: {sorted(_duplicates)}")
